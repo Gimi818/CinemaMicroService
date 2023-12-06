@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: films
+  config:
+    import: optional:configserver:http://localhost:8888
