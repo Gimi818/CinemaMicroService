@@ -1,6 +1,6 @@
 package com.screening.screening.client;
 
-import com.screening.screening.Film;
+import com.screening.screening.dto.Film;
 
 import org.springframework.cloud.openfeign.FeignClient;
 
