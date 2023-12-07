@@ -11,7 +11,7 @@
         <module name="discovery" />
         <module name="gateway" />
       </profile>
-      <profile name="Annotation profile for film" enabled="true">
+      <profile name="Annotation profile for screening" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -22,6 +22,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
         <module name="user" />
+        <module name="screening" />
         <module name="film" />
       </profile>
     </annotationProcessing>
@@ -30,6 +31,7 @@
       <module name="discovery" target="17" />
       <module name="film" target="17" />
       <module name="gateway" target="17" />
+      <module name="screening" target="17" />
       <module name="user" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -39,6 +41,7 @@
       <module name="discovery" options="-parameters" />
       <module name="film" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="screening" options="-parameters" />
       <module name="user" options="-parameters" />
     </option>
   </component>

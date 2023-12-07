@@ -9,6 +9,8 @@
     <file url="file://$PROJECT_DIR$/film/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/screening/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/screening/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user/src/main/resources" charset="UTF-8" />
   </component>
