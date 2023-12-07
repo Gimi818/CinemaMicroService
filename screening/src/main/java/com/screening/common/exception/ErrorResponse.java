@@ -1,4 +1,4 @@
-package com.screening.screening.exception;
+package com.screening.common.exception;
 
 import org.springframework.http.HttpStatus;
 

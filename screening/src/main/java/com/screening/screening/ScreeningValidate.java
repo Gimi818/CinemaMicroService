@@ -1,8 +1,12 @@
 package com.screening.screening;
 
+import com.screening.common.exception.exceptions.NotFoundException;
+import com.screening.common.exception.exceptions.TimeDifferenceException;
+import com.screening.common.exception.exceptions.TooLateException;
+import com.screening.common.exception.exceptions.TooManyScreeningException;
+import com.screening.screening.dto.Film;
 import com.screening.screening.dto.ScreeningRequestDto;
 
-import com.screening.screening.exception.exceptions.*;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -15,7 +19,7 @@ import static com.screening.screening.ScreeningValidate.ErrorMessages.*;
 
 @Component
 @AllArgsConstructor
-public class ScreeningValidate {
+ class ScreeningValidate {
     private final ScreeningRepository repository;
 
     public void checkCorrectData(LocalDate date) {

@@ -1,4 +1,4 @@
-package com.screening.screening;
+package com.screening;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

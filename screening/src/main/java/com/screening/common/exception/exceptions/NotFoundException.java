@@ -1,4 +1,4 @@
-package com.screening.screening.exception.exceptions;
+package com.screening.common.exception.exceptions;
 
 public class NotFoundException extends RuntimeException{
     public NotFoundException(final String message) {

@@ -1,9 +1,6 @@
 package com.screening.screening;
 
-import com.screening.screening.dto.CreatedScreeningDto;
-import com.screening.screening.dto.ScreeningFilmDto;
-import com.screening.screening.dto.ScreeningRequestDto;
-import com.screening.screening.dto.ScreeningResponseDto;
+import com.screening.screening.dto.*;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Component;
@@ -21,6 +18,8 @@ interface ScreeningMapper {
     ScreeningResponseDto screeningFilmDtoToResponseDto(ScreeningFilmDto screeningFilmDto);
 
     Screening screeningFilmDtoToResponseDto2(ScreeningFilmDto screeningFilmDto);
+
+    ScreeningAvailableSeats screeningToSeatsDto(Screening screening);
     CreatedScreeningDto createdEntityToDto(Screening screening);
 
 }

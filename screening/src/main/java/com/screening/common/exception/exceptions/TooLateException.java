@@ -1,4 +1,4 @@
-package com.screening.screening.exception.exceptions;
+package com.screening.common.exception.exceptions;
 
 public class TooLateException extends RuntimeException {
 
