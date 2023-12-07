@@ -1,4 +1,4 @@
-package com.screening.screening;
+package com.screening.screening.dto;
 
 
 import jakarta.persistence.*;
@@ -11,7 +11,6 @@ import lombok.*;
 @Builder
 
 public class Film {
-
 
     private Long id;
     private String title;

@@ -1,9 +1,6 @@
-package com.screening.screening.exception;
+package com.screening.common.exception;
 
-import com.screening.screening.exception.exceptions.NotFoundException;
-import com.screening.screening.exception.exceptions.TimeDifferenceException;
-import com.screening.screening.exception.exceptions.TooLateException;
-import com.screening.screening.exception.exceptions.TooManyScreeningException;
+import com.screening.common.exception.exceptions.*;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -54,5 +51,13 @@ public class ControllerErrorHandler {
         return new
                 ErrorResponse(message, HttpStatus.CONFLICT);
     }
-
+    @ResponseStatus(HttpStatus.CONFLICT)
+    @ExceptionHandler(AlreadyTakenException.class)
+    @ResponseBody
+    public ErrorResponse alreadyTakenException(AlreadyTakenException exception) {
+        final String message = exception.getMessage();
+        log.error(message);
+        return new
+                ErrorResponse(message, HttpStatus.CONFLICT);
+    }
 }

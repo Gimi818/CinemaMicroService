@@ -37,11 +37,11 @@ public class ScreeningController {
         return service.getScreeningWithFilm(screeningId);
     }
 
-    //    @GetMapping(FIND_AVAILABLE_SEATS)
-//    public ResponseEntity<ScreeningAvailableSeats> findAvailableSeats(@PathVariable Long id) {
-//        ScreeningAvailableSeats screeningAvailableSeats = screeningFacade.findAvailableSeats(id);
-//        return ResponseEntity.status(HttpStatus.OK).body(screeningAvailableSeats);
-//    }
+        @GetMapping(FIND_AVAILABLE_SEATS)
+    public ResponseEntity<ScreeningAvailableSeats> findAvailableSeats(@PathVariable Long id) {
+        ScreeningAvailableSeats screeningAvailableSeats = service.findAvailableSeats(id);
+        return ResponseEntity.status(HttpStatus.OK).body(screeningAvailableSeats);
+    }
 
     static final class Routes {
         static final String ROOT = "/api/v1/screenings";
@@ -49,7 +49,7 @@ public class ScreeningController {
 
         static final String FIND_SCREENING = ROOT + "/{screeningId}";
 
-        static final String FIND_AVAILABLE_SEATS = ROOT + "/{id}";
+        static final String FIND_AVAILABLE_SEATS = ROOT + "/seats/{id}";
 
     }
 

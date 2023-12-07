@@ -1,10 +1,11 @@
 package com.screening.screening;
 
 import com.screening.screening.client.FilmClient;
-import com.screening.screening.dto.CreatedScreeningDto;
-import com.screening.screening.dto.ScreeningRequestDto;
-import com.screening.screening.dto.ScreeningResponseDto;
-import com.screening.screening.exception.exceptions.NotFoundException;
+import com.screening.screening.dto.*;
+import com.screening.common.exception.exceptions.NotFoundException;
+import com.screening.seat.Seat;
+import com.screening.seat.SeatFacade;
+import com.screening.seat.SeatStatus;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
@@ -14,16 +15,17 @@ import static com.screening.screening.ScreeningService.ErrorMessages.*;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 @Service
 @AllArgsConstructor
 @Log4j2
-public class ScreeningService {
+ class ScreeningService implements ScreeningFacade {
     private final ScreeningRepository repository;
     private final ScreeningMapper mapper;
     private final ScreeningValidate validate;
     private final FilmClient filmClient;
-   // private final SeatFacade seatFacade;
+    private final SeatFacade seatFacade;
 
 
     @Transactional
@@ -34,7 +36,7 @@ public class ScreeningService {
 
         Screening screening = repository.save(mapper.dtoToEntity(screeningRequestDto));
         screening.setFilmId(film.getId());
-     //   screening.setSeats(createSeats());
+        screening.setSeats(createSeats());
         log.info("Saved Screening {}", screeningRequestDto);
         return mapper.createdEntityToDto(screening);
     }
@@ -66,20 +68,20 @@ public class ScreeningService {
         return screening;
     }
 
-//    public ScreeningAvailableSeats findAvailableSeats(Long screeningId) {
-//        Screening screening = repository.findById(screeningId).orElseThrow(() -> new NotFoundException(SCREENING_NOT_FOUND, screeningId));
-//        log.info("Found screening with id {}", screeningId);
-//        return mapper.screeningToSeatsDto(screening);
-//    }
-    //    @Transactional
-//    private List<Seat> createSeats() {
-//        return IntStream.rangeClosed(1, 10)
-//                .boxed()
-//                .flatMap(rowNumber -> IntStream.rangeClosed(1, 10)
-//                        .mapToObj(seatInRow -> seatFacade.createSeat(rowNumber, seatInRow, SeatStatus.AVAILABLE)))
-//                .collect(Collectors.toList());
-//
-//    }
+    public ScreeningAvailableSeats findAvailableSeats(Long screeningId) {
+        Screening screening = repository.findById(screeningId).orElseThrow(() -> new NotFoundException(SCREENING_NOT_FOUND, screeningId));
+        log.info("Found screening with id {}", screeningId);
+        return mapper.screeningToSeatsDto(screening);
+    }
+
+    private List<Seat> createSeats() {
+        return IntStream.rangeClosed(1, 10)
+                .boxed()
+                .flatMap(rowNumber -> IntStream.rangeClosed(1, 10)
+                        .mapToObj(seatInRow -> seatFacade.createSeat(rowNumber, seatInRow, SeatStatus.AVAILABLE)))
+                .collect(Collectors.toList());
+
+    }
 
     static final class ErrorMessages {
         static final String SCREENING_NOT_FOUND = "The screening with id %s not found";
