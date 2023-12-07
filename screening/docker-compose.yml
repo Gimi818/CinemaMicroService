@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgresdb:
+    image: postgres
+    container_name: postgres-containerscreening
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: screenings
+    ports:
+      - "5100:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

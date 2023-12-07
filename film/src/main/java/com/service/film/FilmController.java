@@ -14,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class FilmController {
     private final FilmService filmService;
-    @PostMapping(SAVE)
+    @PostMapping(ROOT)
     public ResponseEntity<CreatedFilmDto> saveFilm(@RequestBody FilmRequestDto filmRequestDto) {
         return new ResponseEntity<>(filmService.saveFilm(filmRequestDto), HttpStatus.CREATED);
     }
@@ -26,9 +26,8 @@ public class FilmController {
     }
 
     @GetMapping(FIND_BY_ID)
-    public ResponseEntity<FilmResponseDto> findFilmById(@PathVariable Long id) {
-        FilmResponseDto filmResponseDto = filmService.findFilmById(id);
-        return ResponseEntity.status(HttpStatus.OK).body(filmResponseDto);
+    public Film findById(@PathVariable Long id) {
+        return filmService.findById(id);
     }
 
     @GetMapping(FIND_BY_CATEGORY)
@@ -44,8 +43,7 @@ public class FilmController {
     }
 
     static final class Routes {
-        static final String ROOT = "/films";
-        static final String SAVE = "/films";
+        static final String ROOT = "/api/v1/films";
         static final String DELETE_BY_ID = ROOT + "/{id}";
         static final String FIND_BY_ID = ROOT + "/{id}";
         static final String FIND_BY_CATEGORY = ROOT + "/category";

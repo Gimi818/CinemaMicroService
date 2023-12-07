@@ -17,6 +17,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="entityManagerFactory" />
+          <factory-entry name="film" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
@@ -76,6 +77,7 @@
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.4.11" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.4.11" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-to-slf4j:2.20.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.20.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:2.0.9" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.33" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:3.1.6" level="project" />
@@ -91,8 +93,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.0.14" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct-processor:1.5.5.Final" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.5.5.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.14.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.14.1" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.postgresql:postgresql:42.6.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.checkerframework:checker-qual:3.31.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-actuator:3.1.6" level="project" />
@@ -187,6 +187,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.9.1" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="0d016830-dab3-4302-91c3-f98d3cc5984a" />
+    <option name="uniqueId" value="ca7597e9-de90-4577-b91d-083e5e8979dd" />
   </component>
 </module>
