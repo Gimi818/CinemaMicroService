@@ -11,6 +11,16 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: films
+          uri: http://localhost:8070
+          predicates:
+            - Path=/api/v1/films/**
+        - id: screenings
+          uri: http://localhost:8060
+          predicates:
+            - Path=/api/v1/screenings/**
+
 management:
   tracing:
     sampling:
