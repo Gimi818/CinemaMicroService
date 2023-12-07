@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a1e39de-403f-4787-b8b8-d6efebcb16f3" name="Changes" comment="Created Film Entity in Screening Service">
+      <change afterPath="$PROJECT_DIR$/screening/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/film/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/film/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2Z8QhjMfP84tuLVaWZFKxK2ZdXO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "ToolWindowNx Console.ShowToolbar": "false",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Gimi/Desktop/CinemaMicroService/screening/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "9c0b9ae5a6cc759ed0c0d4195ab8a176",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.user" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.FilmApplication">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="discovery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.discovery.DiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="film" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.service.film.FilmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScreeningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="screening" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.screening.ScreeningApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.user.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="film: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="film/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.film: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a1e39de-403f-4787-b8b8-d6efebcb16f3" name="Changes" comment="" />
+      <created>1701801350902</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701801350902</updated>
+      <workItem from="1701801352194" duration="42000" />
+      <workItem from="1701801410050" duration="442000" />
+      <workItem from="1701801868015" duration="4446000" />
+      <workItem from="1701849494836" duration="1892000" />
+      <workItem from="1701866420847" duration="3636000" />
+      <workItem from="1701873998004" duration="7115000" />
+      <workItem from="1701885568755" duration="419000" />
+      <workItem from="1701886141627" duration="8746000" />
+      <workItem from="1701938700072" duration="3428000" />
+    </task>
+    <task id="LOCAL-00018" summary="Created PasswordConflictException">
+      <created>1701869702480</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1701869702480</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Created ErrorResponse">
+      <created>1701869714644</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1701869714644</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Created AccountType Enum">
+      <created>1701869736564</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1701869736564</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Created UserApplication">
+      <created>1701869760735</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1701869760735</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Created UserController">
+      <created>1701869839505</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701869839505</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Added endpoints to UserController">
+      <created>1701869887044</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1701869887044</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Creates microservice Film">
+      <created>1701874520476</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874520476</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Creates Film Entity">
+      <created>1701874565160</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874565160</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Creates FilmCategory and added categories">
+      <created>1701874585327</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874585327</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Creates FilmRequestDto">
+      <created>1701874602431</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874602431</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Creates FilmResponseDto">
+      <created>1701874611361</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874611361</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Creates CreatedFilmDto">
+      <created>1701874622514</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874622514</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Created FilmController">
+      <created>1701874649959</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874649959</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Created FilmRepository">
+      <created>1701874657225</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1701874657225</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Implement business logic in FilmService">
+      <created>1701875670374</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1701875670374</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Added requests to repository">
+      <created>1701875735550</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1701875735550</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Added endpoints to Controller">
+      <created>1701875819322</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1701875819322</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Created NotFoundException">
+      <created>1701875836083</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1701875836083</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Created FilmMapper">
+      <created>1701875853514</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1701875853514</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Created ErrorResponse">
+      <created>1701875863549</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1701875863549</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added new dependencies">
+      <created>1701875892725</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1701875892725</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Created AlreadyExistException">
+      <created>1701875918549</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1701875918549</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Created ControllerErrorHandler">
+      <created>1701876032939</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1701876032939</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Created docker-compose">
+      <created>1701895805017</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1701895805017</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Changed spring boot version from 3.2.0 to 3.1.0">
+      <created>1701895893381</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1701895893381</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Added configuration">
+      <created>1701895942974</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1701895942974</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Created discovery configuration">
+      <created>1701896181222</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1701896181222</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Created users configuration">
+      <created>1701896195643</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1701896195643</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Created films configuration">
+      <created>1701896210438</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1701896210438</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Created gateway configuration">
+      <created>1701896236283</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1701896236283</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Added compiler.xml">
+      <created>1701896408387</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1701896408387</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Created Screening entity">
+      <created>1701938895611</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1701938895611</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Created ScreeningController">
+      <created>1701938948123</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1701938948124</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Created ScreeningRepository">
+      <created>1701938957190</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1701938957190</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Created ScreeningService">
+      <created>1701938966585</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1701938966585</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Created ControllerErrorHandler">
+      <created>1701941873108</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1701941873108</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Created CreatedScreeningDto">
+      <created>1701941888344</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1701941888344</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Created ErrorResponse">
+      <created>1701941897161</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1701941897161</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Created TooManyScreeningException">
+      <created>1701941926714</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1701941926714</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Created TooLateException">
+      <created>1701941934461</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1701941934461</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Created TimeDifferenceException">
+      <created>1701941943081</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1701941943081</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Created ScreeningValidate and added business logic">
+      <created>1701942017321</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942017321</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Added business logic to ScreeningService">
+      <created>1701942037402</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942037403</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Created ScreeningRequestDto and ResponseDto">
+      <created>1701942065169</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942065169</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Created ScreeningMapper">
+      <created>1701942079027</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942079027</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Added endpoints to Controller">
+      <created>1701942098323</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942098324</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Created NotFoundException">
+      <created>1701942112938</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942112938</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Configuration">
+      <created>1701942174948</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942174948</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Created Film Entity in Screening Service">
+      <created>1701942206959</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1701942206959</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Changed spring boot version from 3.2.0 to 3.1.0" />
+    <MESSAGE value="Added configuration" />
+    <MESSAGE value="Created discovery configuration" />
+    <MESSAGE value="Created users configuration" />
+    <MESSAGE value="Created films configuration" />
+    <MESSAGE value="Created gateway configuration" />
+    <MESSAGE value="Added compiler.xml" />
+    <MESSAGE value="Created Screening entity" />
+    <MESSAGE value="Created ScreeningController" />
+    <MESSAGE value="Created ScreeningRepository" />
+    <MESSAGE value="Created ScreeningService" />
+    <MESSAGE value="Created ControllerErrorHandler" />
+    <MESSAGE value="Created CreatedScreeningDto" />
+    <MESSAGE value="Created ErrorResponse" />
+    <MESSAGE value="Created TooManyScreeningException" />
+    <MESSAGE value="Created TooLateException" />
+    <MESSAGE value="Created TimeDifferenceException" />
+    <MESSAGE value="Created ScreeningValidate and added business logic" />
+    <MESSAGE value="Added business logic to ScreeningService" />
+    <MESSAGE value="Created ScreeningRequestDto and ResponseDto" />
+    <MESSAGE value="Created ScreeningMapper" />
+    <MESSAGE value="Added endpoints to Controller" />
+    <MESSAGE value="Created NotFoundException" />
+    <MESSAGE value="Configuration" />
+    <MESSAGE value="Created Film Entity in Screening Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Film Entity in Screening Service" />
+  </component>
+</project>
