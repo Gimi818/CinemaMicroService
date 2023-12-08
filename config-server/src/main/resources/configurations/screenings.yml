@@ -13,7 +13,7 @@ spring:
     name: screenings
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/screenings
+    url: jdbc:postgresql://localhost:5100/screenings
     username: postgres
     password: password
   jpa:
