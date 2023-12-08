@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: emailSender
+  config:
+    import: optional:configserver:http://localhost:8888
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: cinemaemailtest@gmail.com
+    password: eumw bkil vcnv aiaf
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

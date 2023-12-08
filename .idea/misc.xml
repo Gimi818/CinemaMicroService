@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/user/pom.xml" />
         <option value="$PROJECT_DIR$/film/pom.xml" />
         <option value="$PROJECT_DIR$/screening/pom.xml" />
+        <option value="$PROJECT_DIR$/emailsender/pom.xml" />
       </list>
     </option>
   </component>
