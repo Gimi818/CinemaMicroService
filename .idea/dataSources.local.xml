@@ -12,6 +12,10 @@
       <schema-mapping />
     </data-source>
     <data-source name="screenings@localhost" uuid="b68d1e11-a570-4bc8-813a-b494ed75f38f">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="currencies@localhost" uuid="24a03ca0-b473-430a-ae02-54e52dbe6a7c">
       <database-info product="PostgreSQL" version="16.1 (Debian 16.1-1.pgdg120+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="16.1" exact-driver-version="42.6">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
