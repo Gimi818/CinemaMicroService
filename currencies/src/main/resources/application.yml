@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: currencies
+  config:
+    import: optional:configserver:http://localhost:8888
+nbp:
+  api:
+    url: http://api.nbp.pl/api/exchangerates/tables/a?format=json
