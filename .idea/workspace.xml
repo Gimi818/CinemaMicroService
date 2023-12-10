@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Configuration" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Created Rate dto">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/currencies.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/src/test/java/com/currencies/CurrenciesApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05da6609629281be41e88708dff2eb95a5722f49" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05da6609629281be41e88708dff2eb95a5722f49" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562f6bfead9c546bc9c13ccb46cd94b4d8b52659" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562f6bfead9c546bc9c13ccb46cd94b4d8b52659" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b80991ea76eeda6cad61ac92a9f5bf7fe9b90cd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b80991ea76eeda6cad61ac92a9f5bf7fe9b90cd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed67bc8ae8c010f46077abf412943a9140332ea1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed67bc8ae8c010f46077abf412943a9140332ea1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/edf15473a9193ee96e54c9fa6910522871ab26b0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/edf15473a9193ee96e54c9fa6910522871ab26b0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CinemaMicroService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CinemaMicroService.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +41,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -55,11 +83,11 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gimi/Desktop/CinemaMicroService/emailsender/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gimi/Desktop/CinemaMicroService/currencies/pom.xml&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;486160934d44c8dca5175ad02fc4a192&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f94b6c820f9bf6ad99016f90592702c8&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -80,10 +108,17 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.CurrenciesApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrenciesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="currencies" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.currencies.CurrenciesApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,6 +183,14 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="currencies: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="currencies/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="screening: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -160,9 +203,9 @@
       <list>
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.DiscoveryApplication" />
+        <item itemvalue="Docker.currencies: Compose Deployment" />
         <item itemvalue="Docker.screening: Compose Deployment" />
         <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.DiscoveryApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +225,11 @@
       <workItem from="1702043657509" duration="2803000" />
       <workItem from="1702059793507" duration="3502000" />
       <workItem from="1702063680386" duration="332000" />
+      <workItem from="1702070043157" duration="2273000" />
+      <workItem from="1702104618205" duration="177000" />
+      <workItem from="1702149037911" duration="2629000" />
+      <workItem from="1702155830040" duration="39000" />
+      <workItem from="1702223511748" duration="3062000" />
     </task>
     <task id="LOCAL-00001" summary="Added configuration to application.yml">
       <created>1701980147560</created>
@@ -365,7 +413,91 @@
       <option name="project" value="LOCAL" />
       <updated>1702063953790</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Code refactoring">
+      <created>1702064958297</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1702064958297</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Created ExchangeRate Entity">
+      <created>1702225039299</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225039299</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Created ExchangeRateService with request to API NBP">
+      <created>1702225081932</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225081932</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Created ExchangeRateRepository">
+      <created>1702225097602</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225097602</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Created ExchangeRateController with endpoint">
+      <created>1702225124912</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225124912</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Created ExchangeRateResponseDto">
+      <created>1702225133334</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225133334</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Created ExchangeRateScheduler">
+      <created>1702225146235</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225146235</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Created CurrenciesApplication">
+      <created>1702225798998</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225798998</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Created CurrencyData dto">
+      <created>1702225815356</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225815356</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Created docker-compose.yml for currencies database">
+      <created>1702225841185</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225841185</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Added currencies configuration">
+      <created>1702225860929</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225860929</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Created Rate dto">
+      <created>1702225885870</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225885870</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,15 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added configuration to application.yml" />
-    <MESSAGE value="Added docker-compose with configuration" />
-    <MESSAGE value="Created FilmClient" />
-    <MESSAGE value="Added new dependencies" />
-    <MESSAGE value="Created screenings.yml configuration" />
-    <MESSAGE value="Code refactoring" />
-    <MESSAGE value="Created Seat Entity" />
-    <MESSAGE value="Created SeatService and implementation of business logic" />
-    <MESSAGE value="Created SeatRepository" />
     <MESSAGE value="Created SeatStatus enum" />
     <MESSAGE value="Created SeatFacade and configuration class" />
     <MESSAGE value="Created AbstractEntity" />
@@ -406,6 +529,18 @@
     <MESSAGE value="Created EmailWithTicketPdf" />
     <MESSAGE value="Created EmailSenderApplication" />
     <MESSAGE value="Configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuration" />
+    <MESSAGE value="Code refactoring" />
+    <MESSAGE value="Created ExchangeRate Entity" />
+    <MESSAGE value="Created ExchangeRateService with request to API NBP" />
+    <MESSAGE value="Created ExchangeRateRepository" />
+    <MESSAGE value="Created ExchangeRateController with endpoint" />
+    <MESSAGE value="Created ExchangeRateResponseDto" />
+    <MESSAGE value="Created ExchangeRateScheduler" />
+    <MESSAGE value="Created CurrenciesApplication" />
+    <MESSAGE value="Created CurrencyData dto" />
+    <MESSAGE value="Created docker-compose.yml for currencies database" />
+    <MESSAGE value="Added currencies configuration" />
+    <MESSAGE value="Created Rate dto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Rate dto" />
   </component>
 </project>
