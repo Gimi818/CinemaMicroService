@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 class ExchangeRateService {
 
     private final ExchangeRateRepository repository;
-    private final Mapper mapper;
+    private final CurrenciesMapper mapper;
 
     @Value("${nbp.api.url}")
     private String url;
