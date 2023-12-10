@@ -37,7 +37,7 @@ public class UserController {
     }
 
     static final class Routes {
-        static final String ROOT = "/users";
+        static final String ROOT = "/api/v1/users";
         static final String REGISTRATION = ROOT + "/registration";
         static final String CONFIRM = ROOT + "/confirm";
         static final String FIND_USER_BY_UUID = ROOT + "/{Uuid}";
