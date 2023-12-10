@@ -20,6 +20,14 @@ spring:
           uri: http://localhost:8060
           predicates:
             - Path=/api/v1/screenings/**
+        - id: currencies
+          uri: http://localhost:8000
+          predicates:
+              - Path=/api/v1/codes/**
+        - id: users
+          uri: http://localhost:8090
+          predicates:
+            - Path=/api/v1/users/**
 
 management:
   tracing:
