@@ -1,0 +1,90 @@
+package com.currencies;
+
+import com.currencies.dto.CurrencyData;
+import com.currencies.dto.ExchangeRateResponseDto;
+import com.currencies.dto.Rate;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+@Service
+@RequiredArgsConstructor
+@Log4j2
+class ExchangeRateService {
+
+    private final ExchangeRateRepository repository;
+    private final Mapper mapper;
+
+    @Value("${nbp.api.url}")
+    private String url;
+
+    public void requestToNBP() {
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+        String json = response.getBody();
+        saveCurrencyRatesFromJson(json);
+    }
+
+    public void saveCurrencyRatesFromJson(String jsonResponse) {
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            List<CurrencyData> currencyDataList = objectMapper.readValue(jsonResponse, new TypeReference<List<CurrencyData>>() {
+            });
+
+            for (CurrencyData currencyData : currencyDataList) {
+                for (Rate rate : currencyData.rates()) {
+                    Optional<ExchangeRate> existingExchangeRate = Optional.ofNullable(repository.findByCode(rate.code()));
+
+                    if (existingExchangeRate.isPresent()) {
+                        ExchangeRate existing = existingExchangeRate.get();
+                        existing.setCurrency(rate.currency());
+                        existing.setMid(rate.mid());
+                        repository.save(existing);
+                        log.info("Update {} rate ", existing.getCurrency());
+                    } else {
+                        ExchangeRate exchangeRate = ExchangeRate.builder()
+                                .currency(rate.currency())
+                                .code(rate.code())
+                                .mid(rate.mid())
+                                .build();
+                        repository.save(exchangeRate);
+                        log.info("Added {} rate ", exchangeRate.getCurrency());
+                    }
+                }
+            }
+            addPLNRate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public List<ExchangeRateResponseDto> findAllCurrency() {
+        log.info("Returning all currency");
+        return repository.findAll().stream()
+                .map(mapper::entityToDto)
+                .collect(Collectors.toList());
+    }
+
+    public void addPLNRate() {
+        ExchangeRate plnExchangeRate = repository.findByCode("PLN");
+        if (plnExchangeRate == null) {
+            ExchangeRate newPlnExchangeRate = ExchangeRate.builder()
+                    .currency("Polski Złoty")
+                    .code("PLN")
+                    .mid(1.0)
+                    .build();
+            repository.save(newPlnExchangeRate);
+            log.info("Added PLN rate   ");
+        }
+    }
+
+}
