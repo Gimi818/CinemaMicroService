@@ -30,19 +30,36 @@ import java.util.stream.IntStream;
 
     @Transactional
     public CreatedScreeningDto saveScreening(ScreeningRequestDto screeningRequestDto, Long filmId) {
-        Film film = filmClient.findFilmById(filmId);
-        log.info("Film film film film  {}", film.getTitle());
-        validate.dataValidation(screeningRequestDto, film);
+        Film film = validateAndGetFilm(filmId);
+        validateScreeningData(screeningRequestDto, film);
 
-        Screening screening = repository.save(mapper.dtoToEntity(screeningRequestDto));
-        screening.setFilmId(film.getId());
-        screening.setSeats(createSeats());
+        Screening screening = createAndSaveScreening(screeningRequestDto, film);
+        assignSeatsToScreening(screening);
+
         log.info("Saved Screening {}", screeningRequestDto);
         return mapper.createdEntityToDto(screening);
     }
 
+    private Film validateAndGetFilm(Long filmId) {
+        Film film = filmClient.findFilmById(filmId);
+        log.info("Film found: {}", film.getTitle());
+        return film;
+    }
 
+    private void validateScreeningData(ScreeningRequestDto screeningRequestDto, Film film) {
+        validate.dataValidation(screeningRequestDto, film);
+    }
 
+    private Screening createAndSaveScreening(ScreeningRequestDto screeningRequestDto, Film film) {
+        Screening screening = mapper.dtoToEntity(screeningRequestDto);
+        screening.setFilmId(film.getId());
+        return repository.save(screening);
+    }
+
+    private void assignSeatsToScreening(Screening screening) {
+        List<Seat> seats = createSeats();
+        screening.setSeats(seats);
+    }
 
     public ScreeningResponseDto getScreeningWithFilm(Long id ){
         Screening screening = repository.findById(id).orElseThrow();

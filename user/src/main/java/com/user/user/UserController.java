@@ -30,9 +30,9 @@ public class UserController {
         return ResponseEntity.status(HttpStatus.OK).body("Your account has been confirmed.");
     }
 
-    @GetMapping(Routes.FIND_USER_BY_UUID)
-    public ResponseEntity<UserResponseDto> findUserByUuid(@PathVariable UUID Uuid) {
-        UserResponseDto userResponseDto = service.findUserByUuid(Uuid);
+    @GetMapping(Routes.FIND_USER_BY_ID)
+    public ResponseEntity<UserResponseDto> findUserById(@PathVariable Long id) {
+        UserResponseDto userResponseDto = service.findUserById(id);
         return ResponseEntity.status(HttpStatus.OK).body(userResponseDto);
     }
 
@@ -40,7 +40,7 @@ public class UserController {
         static final String ROOT = "/api/v1/users";
         static final String REGISTRATION = ROOT + "/registration";
         static final String CONFIRM = ROOT + "/confirm";
-        static final String FIND_USER_BY_UUID = ROOT + "/{Uuid}";
+        static final String FIND_USER_BY_ID = ROOT + "/{id}";
 
     }
 }
