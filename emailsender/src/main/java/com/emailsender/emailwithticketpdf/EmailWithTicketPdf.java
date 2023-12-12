@@ -18,7 +18,7 @@ import java.util.ResourceBundle;
 @Service
 @AllArgsConstructor
 public class EmailWithTicketPdf {
-  //  private final JavaMailSender javaMailSender;
+    private final JavaMailSender javaMailSender;
     private final GenerateQrCode generateQrCode;
 
 
@@ -71,18 +71,18 @@ public class EmailWithTicketPdf {
             e.printStackTrace();
         }
 
-//        MimeMessage message = javaMailSender.createMimeMessage();
-//        MimeMessageHelper helper = new MimeMessageHelper(message, true);
-//
-//        helper.setTo(email);
-//        helper.setSubject(bundle.getString("email.subject"));
-//
-//        String text = bundle.getString("email.thankYouMessage");
-//        helper.setText(text, true);
-//
-//        byte[] pdfBytes = pdfOutputStream.toByteArray();
-//        helper.addAttachment("Ticket.pdf", new ByteArrayResource(pdfBytes));
-//
-//        javaMailSender.send(message);
+        MimeMessage message = javaMailSender.createMimeMessage();
+        MimeMessageHelper helper = new MimeMessageHelper(message, true);
+
+        helper.setTo(email);
+        helper.setSubject(bundle.getString("email.subject"));
+
+        String text = bundle.getString("email.thankYouMessage");
+        helper.setText(text, true);
+
+        byte[] pdfBytes = pdfOutputStream.toByteArray();
+        helper.addAttachment("Ticket.pdf", new ByteArrayResource(pdfBytes));
+
+        javaMailSender.send(message);
     }
 }

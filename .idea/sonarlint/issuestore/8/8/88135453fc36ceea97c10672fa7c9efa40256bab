@@ -1,19 +1,6 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(Ó¹èÚÿÿÿÿÿ8ÅİÇÕÄ1
 \
-java:S1854":Remove this useless assignment to local variable "writer".(åÔş…üÿÿÿÿ8›èÜÇÄ1
-•
-java:S1130"xRemove the declaration of thrown exception 'jakarta.mail.MessagingException', as it cannot be thrown from method's body.(Û¾³8ãşÈÕÄ1
+java:S1854":Remove this useless assignment to local variable "writer".(åÔş…üÿÿÿÿ8Œ£·ËÅ1
 M
-java:S1481"+Remove this unused "writer" local variable.(åÔş…üÿÿÿÿ8¢èÜÇÄ1
-X	java:S125;"<This block of commented-out lines of code should be removed.(£ë›„8²ÚìÇÄ1
-X	java:S125J"<This block of commented-out lines of code should be removed.(«ûú8öşÈÕÄ1
-[
-java:S1128">Remove this unused import 'jakarta.mail.internet.MimeMessage'.(š‹ÔÕ8÷şÈÕÄ1
-g
-java:S1128"JRemove this unused import 'org.springframework.core.io.ByteArrayResource'.(Ã¤Ê¾8÷şÈÕÄ1
-j
-java:S1128	"MRemove this unused import 'org.springframework.mail.javamail.JavaMailSender'.(ÕÃ›8÷şÈÕÄ1
-r
-java:S1128
-"PRemove this unused import 'org.springframework.mail.javamail.MimeMessageHelper'.(Ö€”÷øÿÿÿÿ8÷şÈÕÄ1
+java:S1481"+Remove this unused "writer" local variable.(åÔş…üÿÿÿÿ8£·ËÅ1
+X	java:S125;"<This block of commented-out lines of code should be removed.(£ë›„8–£·ËÅ1

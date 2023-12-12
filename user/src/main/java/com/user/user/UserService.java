@@ -24,8 +24,9 @@ public class UserService {
 
     private final UserRepository repository;
     private final UserMapper userMapper;
-     private final ConfirmUser confirmUser;
+    private final ConfirmUser confirmUser;
     private final PasswordEncoderService passwordEncoderService;
+
 
     @Transactional
     public CreatedUserDto registration(UserRequestDto requestDto) {
@@ -39,12 +40,13 @@ public class UserService {
 
         log.info("Saved user {}", requestDto.email());
 
-     //   confirmUser.sendConfirmationEmail(user);
+        confirmUser.sendConfirmationEmail(user);
         log.info("Sent confirmation email");
 
         return userMapper.createdEntityToDto(user);
 
     }
+
     private User createUser(UserRequestDto requestDto) {
         return User.builder()
                 .lastName(requestDto.lastName())
@@ -57,22 +59,22 @@ public class UserService {
     }
 
 
-    public User findByUuid(UUID userUuid) {
-        User user = repository.findByUuid(userUuid).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, userUuid));
-        log.info("Found user with UUID {}", user.getUuid());
-        return user;
-    }
+//    public User findByUuid(UUID userUuid) {
+//        User user = repository.findByUuid(userUuid).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, userUuid));
+//        log.info("Found user with UUID {}", user.getUuid());
+//        return user;
+//    }
 
-    public UserResponseDto findUserByUuid(UUID userUuid) {
-        User user = repository.findByUuid(userUuid).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, userUuid));
-        log.info("Found user with UUID {}", user.getUuid());
+    public UserResponseDto findUserById(Long id) {
+        User user = repository.findById(id).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, id));
+        log.info("Found user with ID {}", user.getId());
         return userMapper.entityToDto(user);
     }
 
 
     public void passwordValidation(UserRequestDto requestDto) {
         if (!requestDto.password().equals(requestDto.repeatedPassword())) {
-               throw new PasswordConflictException(PASSWORD_CONFLICT);
+            throw new PasswordConflictException(PASSWORD_CONFLICT);
         }
     }
 
