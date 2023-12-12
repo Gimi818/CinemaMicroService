@@ -1,8 +1,4 @@
 
-h
-java:S6204."RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
-h
-java:S62047"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
 M
 java:S1854<"8Remove this useless assignment to local variable "film".(¤»œ
 >
