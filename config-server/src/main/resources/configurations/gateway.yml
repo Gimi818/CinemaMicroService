@@ -28,6 +28,10 @@ spring:
           uri: http://localhost:8090
           predicates:
             - Path=/api/v1/users/**
+        - id: emailSender
+          uri: http://localhost:8022
+          predicates:
+            - Path=/api/v1/send/**
 
 management:
   tracing:
