@@ -4,53 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Created SendEmailBody record">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_atomikos_util_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_api_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_jdbc_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_jms_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_atomikos_transactions_jta_4_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailsender/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emailsender/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b68d1e11-a570-4bc8-813a-b494ed75f38f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b68d1e11-a570-4bc8-813a-b494ed75f38f.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_3_1_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jta_atomikos_2_7_18.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05da6609629281be41e88708dff2eb95a5722f49" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/5/05da6609629281be41e88708dff2eb95a5722f49" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e4a688ff5a4feb03ede5f066f520959fc1e6950" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e4a688ff5a4feb03ede5f066f520959fc1e6950" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562f6bfead9c546bc9c13ccb46cd94b4d8b52659" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562f6bfead9c546bc9c13ccb46cd94b4d8b52659" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b80991ea76eeda6cad61ac92a9f5bf7fe9b90cd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6b80991ea76eeda6cad61ac92a9f5bf7fe9b90cd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/779bf18597e592139d1fc069c1f9546f956d52c0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/779bf18597e592139d1fc069c1f9546f956d52c0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88135453fc36ceea97c10672fa7c9efa40256bab" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88135453fc36ceea97c10672fa7c9efa40256bab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e202735be510d630ef7fa3f189dc7c3c5157241" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e202735be510d630ef7fa3f189dc7c3c5157241" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a24b4f7faa7f1f00f4a7ad0b2fd76dabc664e32d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a24b4f7faa7f1f00f4a7ad0b2fd76dabc664e32d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed67bc8ae8c010f46077abf412943a9140332ea1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed67bc8ae8c010f46077abf412943a9140332ea1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/edf15473a9193ee96e54c9fa6910522871ab26b0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/edf15473a9193ee96e54c9fa6910522871ab26b0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/emailSender.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/emailSender.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/users.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/emailwithticketpdf/EmailWithTicketPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/emailwithticketpdf/EmailWithTicketPdf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/emailsender/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningValidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/UserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/ConfirmUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/ConfirmUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/dto/CreatedUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/dto/CreatedUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
-    </list>
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="MicroServices configuration" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -253,7 +207,7 @@
       <workItem from="1702364394328" duration="1339000" />
       <workItem from="1702366755591" duration="479000" />
       <workItem from="1702376803094" duration="1990000" />
-      <workItem from="1702419223289" duration="2779000" />
+      <workItem from="1702419223289" duration="3187000" />
     </task>
     <task id="LOCAL-00001" summary="Added configuration to application.yml">
       <created>1701980147560</created>
@@ -486,7 +440,28 @@
       <option name="project" value="LOCAL" />
       <updated>1702422004070</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Code refactoring">
+      <created>1702422071729</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702422071729</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Added messages.properties with messages">
+      <created>1702422091881</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702422091881</updated>
+    </task>
+    <task id="LOCAL-00036" summary="MicroServices configuration">
+      <created>1702422150228</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702422150228</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,9 +480,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created screenings.yml configuration" />
-    <MESSAGE value="Code refactoring" />
-    <MESSAGE value="Created Seat Entity" />
     <MESSAGE value="Created SeatService and implementation of business logic" />
     <MESSAGE value="Created SeatRepository" />
     <MESSAGE value="Created SeatStatus enum" />
@@ -530,6 +502,9 @@
     <MESSAGE value="Added new dependencies" />
     <MESSAGE value="Created SecurityConfig" />
     <MESSAGE value="Created SendEmailBody record" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created SendEmailBody record" />
+    <MESSAGE value="Code refactoring" />
+    <MESSAGE value="Added messages.properties with messages" />
+    <MESSAGE value="MicroServices configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="MicroServices configuration" />
   </component>
 </project>
