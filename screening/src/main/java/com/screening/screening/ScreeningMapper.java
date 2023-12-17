@@ -10,14 +10,7 @@ import org.springframework.stereotype.Component;
 interface ScreeningMapper {
     ScreeningMapper screeningMapper = Mappers.getMapper(ScreeningMapper.class);
 
-    ScreeningResponseDto entityToDto(Screening screening);
-
-    // ScreeningAvailableSeats screeningToSeatsDto(Screening screening);
-
     Screening dtoToEntity(ScreeningRequestDto screeningRequestDto);
-    ScreeningResponseDto screeningFilmDtoToResponseDto(ScreeningFilmDto screeningFilmDto);
-
-    Screening screeningFilmDtoToResponseDto2(ScreeningFilmDto screeningFilmDto);
 
     ScreeningAvailableSeats screeningToSeatsDto(Screening screening);
     CreatedScreeningDto createdEntityToDto(Screening screening);

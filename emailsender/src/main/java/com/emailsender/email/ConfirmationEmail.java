@@ -1,4 +1,4 @@
-package com.emailsender.confirmationemail;
+package com.emailsender.email;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;

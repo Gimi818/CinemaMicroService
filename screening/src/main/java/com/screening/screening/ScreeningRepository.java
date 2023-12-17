@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Repository
-public interface ScreeningRepository  extends JpaRepository<Screening,Long> {
+public interface ScreeningRepository extends JpaRepository<Screening, Long> {
     @Query("SELECT s FROM Screening s WHERE s.date = :date")
     List<Screening> findScreeningsByDate(@Param("date") LocalDate date);
 

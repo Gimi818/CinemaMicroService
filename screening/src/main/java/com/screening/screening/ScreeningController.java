@@ -19,6 +19,7 @@ import java.util.List;
 public class ScreeningController {
     private final ScreeningService service;
 
+
     @GetMapping(ROOT)
     public ResponseEntity<List<ScreeningResponseDto>> getScreeningsByDate(
             @RequestParam("date") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) {
@@ -26,6 +27,7 @@ public class ScreeningController {
         return ResponseEntity.status(HttpStatus.OK).body(screenings);
 
     }
+
     @PostMapping(SAVE)
     public ResponseEntity<CreatedScreeningDto> saveScreening(@RequestBody ScreeningRequestDto screeningDto, @PathVariable Long filmId) {
         return new ResponseEntity<>(service.saveScreening(screeningDto, filmId), HttpStatus.CREATED);
@@ -33,23 +35,28 @@ public class ScreeningController {
 
 
     @GetMapping(FIND_SCREENING)
-    public ScreeningResponseDto findById(@PathVariable Long screeningId) {
+    public ScreeningResponseDto findScreeningById(@PathVariable Long screeningId) {
         return service.getScreeningWithFilm(screeningId);
     }
 
-        @GetMapping(FIND_AVAILABLE_SEATS)
+
+    @GetMapping(FIND_AVAILABLE_SEATS)
     public ResponseEntity<ScreeningAvailableSeats> findAvailableSeats(@PathVariable Long id) {
         ScreeningAvailableSeats screeningAvailableSeats = service.findAvailableSeats(id);
         return ResponseEntity.status(HttpStatus.OK).body(screeningAvailableSeats);
     }
 
+    @PostMapping(BOOKING_SEATS)
+    public void bookingSets(@PathVariable Long screeningId,@PathVariable int rowNumber,@PathVariable int seatsNumber) {
+        service.bookingSets(screeningId, rowNumber, seatsNumber);
+    }
+
     static final class Routes {
         static final String ROOT = "/api/v1/screenings";
         static final String SAVE = ROOT + "/{filmId}";
-
         static final String FIND_SCREENING = ROOT + "/{screeningId}";
-
         static final String FIND_AVAILABLE_SEATS = ROOT + "/seats/{id}";
+        static final String BOOKING_SEATS = ROOT + "/booking/seats/{screeningId}/{rowNumber}/{seatsNumber}";
 
     }
 

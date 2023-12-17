@@ -1,5 +1,7 @@
-package com.emailsender.emailwithticketpdf;
+package com.emailsender.email;
 
+import com.emailsender.email.dto.EmailWithTicket;
+import com.emailsender.email.qrCode.GenerateQrCode;
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfWriter;
 import jakarta.mail.MessagingException;
@@ -22,7 +24,7 @@ public class EmailWithTicketPdf {
     private final GenerateQrCode generateQrCode;
 
 
-    public void sendEmailWithPDF(String email, Ticket ticket) throws MessagingException {
+    public void sendEmailWithPDF( EmailWithTicket data) throws MessagingException {
         ResourceBundle bundle = ResourceBundle.getBundle("messages", Locale.getDefault());
         Document document = new Document();
         String logoPath = "classpath:logo2.png";
@@ -38,31 +40,31 @@ public class EmailWithTicketPdf {
 
             document.add(logo);
             Font titleFont = new Font(Font.FontFamily.HELVETICA, 25, Font.NORMAL, BaseColor.BLACK);
-            Paragraph filmTitle = new Paragraph(ticket.getFilmTitle(), titleFont);
+            Paragraph filmTitle = new Paragraph(data.ticketDto().filmTitle(), titleFont);
             filmTitle.setAlignment(Element.ALIGN_CENTER);
 
             Font dataFont = new Font(Font.FontFamily.HELVETICA, 20, Font.NORMAL, BaseColor.BLACK);
-            Paragraph filmData = new Paragraph(bundle.getString("ticket.date") + ticket.getScreeningDate(), dataFont);
+            Paragraph filmData = new Paragraph(bundle.getString("ticket.date") + data.ticketDto().screeningDate(), dataFont);
             filmData.setAlignment(Element.ALIGN_LEFT);
 
-            Paragraph filmTime = new Paragraph(bundle.getString("ticket.time") + ticket.getScreeningTime(), dataFont);
+            Paragraph filmTime = new Paragraph(bundle.getString("ticket.time") + data.ticketDto().screeningTime(), dataFont);
             filmTime.setAlignment(Element.ALIGN_LEFT);
 
 
             document.add(filmTitle);
             document.add(filmData);
             document.add(filmTime);
-            document.add(new Paragraph(bundle.getString("ticket.name") + ticket.getName()));
-            document.add(new Paragraph(bundle.getString("ticket.roomNumber") + ticket.getRoomNumber()));
-            document.add(new Paragraph(bundle.getString("ticket.row") + ticket.getRowsNumber()));
-            document.add(new Paragraph(bundle.getString("ticket.seat") + ticket.getSeatInRow()));
-         //   document.add(new Paragraph(bundle.getString("ticket.ticketType") + ticket.getTicketType()));
-         //   document.add(new Paragraph(bundle.getString("ticket.ticketPrice") + ticket.getTicketPrice() + " " + ticket.getCurrency().toString()));
-            document.add(new Paragraph(bundle.getString("ticket.email") + email));
+            document.add(new Paragraph(bundle.getString("ticket.name") + data.ticketDto().name()));
+            document.add(new Paragraph(bundle.getString("ticket.roomNumber") + data.ticketDto().roomNumber()));
+            document.add(new Paragraph(bundle.getString("ticket.row") + data.ticketDto().rowsNumber()));
+            document.add(new Paragraph(bundle.getString("ticket.seat") + data.ticketDto().seatInRow()));
+            document.add(new Paragraph(bundle.getString("ticket.ticketType") + data.ticketDto().ticketType()));
+            document.add(new Paragraph(bundle.getString("ticket.ticketPrice") + data.ticketDto().ticketPrice() + " " + data.ticketDto().currency().toString()));
+            document.add(new Paragraph(bundle.getString("ticket.email") + data.email()));
             document.add(new Paragraph(bundle.getString("ticket.purchaseDate") + LocalDate.now()));
 
 
-            Image qrCodeImage = (Image) generateQrCode.createQr(email, ticket);
+            Image qrCodeImage = (Image) generateQrCode.createQr(data.email(), data.ticketDto());
             qrCodeImage.setAlignment(Element.ALIGN_CENTER);
             qrCodeImage.scaleToFit(280, 280);
             document.add(qrCodeImage);
@@ -74,7 +76,7 @@ public class EmailWithTicketPdf {
         MimeMessage message = javaMailSender.createMimeMessage();
         MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
-        helper.setTo(email);
+        helper.setTo(data.email());
         helper.setSubject(bundle.getString("email.subject"));
 
         String text = bundle.getString("email.thankYouMessage");

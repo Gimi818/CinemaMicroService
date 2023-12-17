@@ -5,6 +5,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import static com.currencies.ExchangeRateController.Routes.*;
@@ -22,8 +23,14 @@ class ExchangeRateController {
         return ResponseEntity.status(HttpStatus.OK).body(allCurrencies);
     }
 
+    @GetMapping(FIND_CODE)
+    public ExchangeRate findCode(@PathVariable String code) {
+        return service.findRateByCode(code);
+    }
+
     static final class Routes {
         static final String ROOT = "/api/v1/codes";
+        static final String FIND_CODE = ROOT +"/{code}";
 
 
     }

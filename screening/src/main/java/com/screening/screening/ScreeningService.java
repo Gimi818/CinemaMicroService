@@ -11,7 +11,9 @@ import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
 import static com.screening.screening.ScreeningService.ErrorMessages.*;
+
 import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,7 +22,7 @@ import java.util.stream.IntStream;
 @Service
 @AllArgsConstructor
 @Log4j2
- class ScreeningService implements ScreeningFacade {
+class ScreeningService implements ScreeningFacade {
     private final ScreeningRepository repository;
     private final ScreeningMapper mapper;
     private final ScreeningValidate validate;
@@ -36,7 +38,7 @@ import java.util.stream.IntStream;
         Screening screening = createAndSaveScreening(screeningRequestDto, film);
         assignSeatsToScreening(screening);
 
-        log.info("Saved Screening {}", screeningRequestDto);
+        log.info("Saved Screening with ID {}", screening.getId());
         return mapper.createdEntityToDto(screening);
     }
 
@@ -44,6 +46,10 @@ import java.util.stream.IntStream;
         Film film = filmClient.findFilmById(filmId);
         log.info("Film found: {}", film.getTitle());
         return film;
+    }
+
+    public void bookingSets(Long id, int rowNumber, int seatsNumber) {
+        seatFacade.checkSeatsAvailability(id, rowNumber, seatsNumber);
     }
 
     private void validateScreeningData(ScreeningRequestDto screeningRequestDto, Film film) {
@@ -61,11 +67,11 @@ import java.util.stream.IntStream;
         screening.setSeats(seats);
     }
 
-    public ScreeningResponseDto getScreeningWithFilm(Long id ){
+    public ScreeningResponseDto getScreeningWithFilm(Long id) {
         Screening screening = repository.findById(id).orElseThrow();
         ResponseEntity<Film> filmResponse = filmClient.findById(screening.getFilmId());
         Film film = filmResponse.getBody();
-        return  new ScreeningResponseDto(screening.getId(),screening.getDate(),screening.getTime(),film);
+        return new ScreeningResponseDto(screening.getId(), screening.getDate(), screening.getTime(), film);
     }
 
 
