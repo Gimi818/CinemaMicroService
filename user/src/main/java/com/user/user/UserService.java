@@ -25,7 +25,7 @@ public class UserService {
     private final UserRepository repository;
     private final UserMapper userMapper;
     private final ConfirmUser confirmUser;
-    private final PasswordEncoderService passwordEncoderService;
+  //  private final PasswordEncoderService passwordEncoderService;
 
 
     @Transactional
@@ -51,7 +51,8 @@ public class UserService {
         return User.builder()
                 .lastName(requestDto.lastName())
                 .firstName(requestDto.firstName())
-                .password(passwordEncoderService.encodePassword(requestDto.password()))
+              //  .password(passwordEncoderService.encodePassword(requestDto.password()))
+                .password(requestDto.password())
                 .accountType(AccountType.UNCONFIRMED)
                 .confirmationToken(confirmUser.generateConfirmationToken())
                 .email(requestDto.email())
@@ -59,9 +60,9 @@ public class UserService {
     }
 
 
-//    public User findByUuid(UUID userUuid) {
-//        User user = repository.findByUuid(userUuid).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, userUuid));
-//        log.info("Found user with UUID {}", user.getUuid());
+//    public User findUser(Long id) {
+//        User user = repository.findById(id).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, id));
+//        log.info("Found user with ID {}", user.getId());
 //        return user;
 //    }
 

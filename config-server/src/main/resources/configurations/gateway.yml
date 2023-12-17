@@ -32,7 +32,10 @@ spring:
           uri: http://localhost:8022
           predicates:
             - Path=/api/v1/send/**
-
+        - id: tickets
+          uri: http://localhost:9010
+          predicates:
+            - Path=/api/v1/booking/**
 management:
   tracing:
     sampling:

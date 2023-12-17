@@ -39,6 +39,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:3.1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:6.0.14" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.20.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:5.0.1" level="project" />
@@ -60,7 +61,9 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:6.0.14" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:6.0.14" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:6.0.14" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:6.0.14" level="project" />
     <orderEntry type="library" name="Maven: jakarta.annotation:jakarta.annotation-api:2.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.9" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:6.0.14" level="project" />
@@ -83,7 +86,7 @@
     <orderEntry type="library" name="Maven: io.github.openfeign:feign-slf4j:12.1" level="project" />
     <orderEntry type="library" name="Maven: jakarta.validation:jakarta.validation-api:3.0.2" level="project" />
     <orderEntry type="library" name="Maven: javax.mail:javax.mail-api:1.6.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-security:3.1.6" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:3.1.6" level="project" />
@@ -93,16 +96,6 @@
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.20.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:2.0.9" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.33" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:6.0.14" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:6.1.5" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:6.2.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:6.1.5" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-core:6.0.14" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:6.0.14" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:6.0.14" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:6.0.14" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.0.14" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:3.1.6" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.15.3" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.3" level="project" />
@@ -112,6 +105,7 @@
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:10.1.16" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:10.1.16" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:6.0.14" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.0.14" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct-processor:1.5.5.Final" level="project" />
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.5.5.Final" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.postgresql:postgresql:42.6.0" level="project" />
@@ -202,6 +196,8 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.mockito:mockito-junit-jupiter:5.3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.skyscreamer:jsonassert:1.5.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.vaadin.external.google:android-json:0.0.20131108.vaadin1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:6.0.14" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jcl:6.0.14" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:6.0.14" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.9.1" level="project" />
   </component>

@@ -1,12 +1,0 @@
-
-X	java:S125"<This block of commented-out lines of code should be removed.(£¢Ğ¬8ø¸‚§Ä1
-]	java:S125""<This block of commented-out lines of code should be removed.(üª›òûÿÿÿÿ8ø¸‚§Ä1
-X	java:S125)"<This block of commented-out lines of code should be removed.(ÂÔŠã8û¸‚§Ä1
-X	java:S1250"<This block of commented-out lines of code should be removed.(Õ¾÷÷8ü¸‚§Ä1
-o
-java:S6204="RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ü¸‚§Ä1
-o
-java:S6204O"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ÍŞ©¨Ä1
-\
-java:S1118^":Add a private constructor to hide the implicit public one.(øÊê®úÿÿÿÿ8¹‚§Ä1
-X	java:S125X"<This block of commented-out lines of code should be removed.(÷ÊòÌ8‚¹‚§Ä1

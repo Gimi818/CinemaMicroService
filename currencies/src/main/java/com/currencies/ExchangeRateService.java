@@ -3,6 +3,7 @@ package com.currencies;
 import com.currencies.dto.CurrencyData;
 import com.currencies.dto.ExchangeRateResponseDto;
 import com.currencies.dto.Rate;
+import com.currencies.exception.NotFoundException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
@@ -11,6 +12,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import static com.currencies.ExchangeRateService.ErrorMessages.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -34,6 +37,11 @@ class ExchangeRateService {
         saveCurrencyRatesFromJson(json);
     }
 
+    public ExchangeRate findRateByCode(String code) {
+        return repository.findByCode(code).orElseThrow(() -> new NotFoundException(NOT_FOUND_CODE, code));
+    }
+
+
     public void saveCurrencyRatesFromJson(String jsonResponse) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
@@ -42,8 +50,7 @@ class ExchangeRateService {
 
             for (CurrencyData currencyData : currencyDataList) {
                 for (Rate rate : currencyData.rates()) {
-                    Optional<ExchangeRate> existingExchangeRate = Optional.ofNullable(repository.findByCode(rate.code()));
-
+                    Optional<ExchangeRate> existingExchangeRate = repository.findByCode(rate.code());
                     if (existingExchangeRate.isPresent()) {
                         ExchangeRate existing = existingExchangeRate.get();
                         existing.setCurrency(rate.currency());
@@ -75,8 +82,8 @@ class ExchangeRateService {
     }
 
     public void addPLNRate() {
-        ExchangeRate plnExchangeRate = repository.findByCode("PLN");
-        if (plnExchangeRate == null) {
+        Optional<ExchangeRate> plnExchangeRate = repository.findByCode("PLN");
+        if (plnExchangeRate.isEmpty()) {
             ExchangeRate newPlnExchangeRate = ExchangeRate.builder()
                     .currency("Polski Złoty")
                     .code("PLN")
@@ -87,4 +94,8 @@ class ExchangeRateService {
         }
     }
 
+    static final class ErrorMessages {
+        static final String NOT_FOUND_CODE = "Not found %s code";
+
+    }
 }

@@ -4,7 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="MicroServices configuration" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Created TicketController with endpoint">
+      <change afterPath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/exception/ControllerErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/email/EmailSenderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/email/ticket/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emailsender/src/main/resources/logo2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/TicketApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/enums/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/ControllerErrorHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/exceptions/TooLateToBookException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/feignClient/CurrenciesClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/feignClient/EmailSenderClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/feignClient/ScreeningClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/feignClient/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/ticket/TicketApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/ExchangeRateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/ExchangeRateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/ExchangeRateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/ExchangeRateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/ExchangeRateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/currencies/src/main/java/com/currencies/ExchangeRateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/confirmationemail/ConfirmationEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/email/ConfirmationEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/emailwithticketpdf/EmailWithTicketPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/email/EmailWithTicketPdf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/emailwithticketpdf/GenerateQrCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/email/qrCode/GenerateQrCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/ConfirmUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/ConfirmUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/EmailSenderClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/EmailSenderClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/encoder/PasswordEncoderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/encoder/PasswordEncoderConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/encoder/PasswordEncoderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/encoder/PasswordEncoderService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +56,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Record" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -55,11 +97,14 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gimi/Desktop/CinemaMicroService/emailsender/pom.xml&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gimi/Desktop/CinemaMicroService/emailsender/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f94b6c820f9bf6ad99016f90592702c8&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;751887dbbf50f72c2f4fdb7a416a48af&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -68,7 +113,13 @@
     ]
   }
 }</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\emailsender\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\emailsender\src\main\resources" />
     </key>
@@ -80,10 +131,11 @@
     <option name="configurationTypes">
       <set>
         <option value="SpringBootApplicationConfigurationType" />
+        <option value="SwaggerCodegen" />
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.configserver.ConfigServerApplication" />
@@ -145,6 +197,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ticket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ticket.TicketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.user.UserApplication" />
@@ -166,6 +225,14 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="ticket: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="ticket/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="user: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -178,9 +245,9 @@
       <list>
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.DiscoveryApplication" />
+        <item itemvalue="Docker.ticket: Compose Deployment" />
         <item itemvalue="Docker.user: Compose Deployment" />
         <item itemvalue="Docker.screening: Compose Deployment" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -208,6 +275,19 @@
       <workItem from="1702366755591" duration="479000" />
       <workItem from="1702376803094" duration="1990000" />
       <workItem from="1702419223289" duration="3187000" />
+      <workItem from="1702452950615" duration="402000" />
+      <workItem from="1702453372817" duration="441000" />
+      <workItem from="1702482621683" duration="11149000" />
+      <workItem from="1702543737737" duration="6916000" />
+      <workItem from="1702560965259" duration="281000" />
+      <workItem from="1702567891572" duration="3406000" />
+      <workItem from="1702628911989" duration="577000" />
+      <workItem from="1702632144463" duration="13066000" />
+      <workItem from="1702720556995" duration="6531000" />
+      <workItem from="1702747763795" duration="5807000" />
+      <workItem from="1702805860031" duration="7007000" />
+      <workItem from="1702830964718" duration="855000" />
+      <workItem from="1702836267424" duration="1650000" />
     </task>
     <task id="LOCAL-00001" summary="Added configuration to application.yml">
       <created>1701980147560</created>
@@ -461,7 +541,56 @@
       <option name="project" value="LOCAL" />
       <updated>1702422150228</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Configuration">
+      <created>1702837608636</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1702837608636</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added new configuration">
+      <created>1702837653479</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1702837653479</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Created dto class">
+      <created>1702837748430</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702837748430</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Created TicketPriceCalculator">
+      <created>1702837800378</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702837800378</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Created enum classes">
+      <created>1702837843247</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1702837843247</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Created Ticket Entity">
+      <created>1702837863863</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702837863863</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Created TicketController with endpoint">
+      <created>1702837899517</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702837899517</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,21 +609,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created SeatService and implementation of business logic" />
-    <MESSAGE value="Created SeatRepository" />
-    <MESSAGE value="Created SeatStatus enum" />
-    <MESSAGE value="Created SeatFacade and configuration class" />
     <MESSAGE value="Created AbstractEntity" />
     <MESSAGE value="Created ScreeningAvailableSeats dto" />
     <MESSAGE value="Created AlreadyTakenException" />
     <MESSAGE value="Changed import" />
     <MESSAGE value="Added dependencies to pom.xml" />
-    <MESSAGE value="Added new configuration" />
-    <MESSAGE value="Created Ticket Entity" />
     <MESSAGE value="Created GenerateQrCode" />
     <MESSAGE value="Created EmailWithTicketPdf" />
     <MESSAGE value="Created EmailSenderApplication" />
-    <MESSAGE value="Configuration" />
     <MESSAGE value="Created ConfirmationEmailController with endpoint SEND_MAIL" />
     <MESSAGE value="Created docker-compose" />
     <MESSAGE value="Created EmailSenderClient" />
@@ -505,6 +627,13 @@
     <MESSAGE value="Code refactoring" />
     <MESSAGE value="Added messages.properties with messages" />
     <MESSAGE value="MicroServices configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="MicroServices configuration" />
+    <MESSAGE value="Configuration" />
+    <MESSAGE value="Added new configuration" />
+    <MESSAGE value="Created dto class" />
+    <MESSAGE value="Created TicketPriceCalculator" />
+    <MESSAGE value="Created enum classes" />
+    <MESSAGE value="Created Ticket Entity" />
+    <MESSAGE value="Created TicketController with endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created TicketController with endpoint" />
   </component>
 </project>

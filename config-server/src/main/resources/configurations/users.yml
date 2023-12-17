@@ -12,7 +12,7 @@ spring:
     name: users
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/users
+    url: jdbc:postgresql://localhost:5111/users
     username: postgres
     password: password
   jpa:
@@ -21,6 +21,9 @@ spring:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
+application:
+  config:
+    emailSender-url: http://localhost:8022/api/v1
 
 
 management:

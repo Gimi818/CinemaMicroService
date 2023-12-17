@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/screening/pom.xml" />
         <option value="$PROJECT_DIR$/emailsender/pom.xml" />
         <option value="$PROJECT_DIR$/currencies/pom.xml" />
+        <option value="$PROJECT_DIR$/ticket/pom.xml" />
       </list>
     </option>
   </component>

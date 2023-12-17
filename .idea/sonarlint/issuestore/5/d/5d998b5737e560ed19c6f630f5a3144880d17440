@@ -1,7 +1,7 @@
 
 o
-java:S6204O"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8²¹ÏæÅ1
+java:S6204U"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ôç˜¢Æ1
 o
-java:S6204c"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Æ¹ÏæÅ1
-U
-java:S1118g":Add a private constructor to hide the implicit public one.(øÊê®úÿÿÿÿ
+java:S6204i"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8÷ç˜¢Æ1
+\
+java:S1118m":Add a private constructor to hide the implicit public one.(øÊê®úÿÿÿÿ8øç˜¢Æ1
