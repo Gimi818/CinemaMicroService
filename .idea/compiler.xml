@@ -24,6 +24,7 @@
         </processorPath>
         <module name="screening" />
         <module name="film" />
+        <module name="ticket" />
         <module name="user" />
         <module name="currencies" />
       </profile>
@@ -36,6 +37,7 @@
       <module name="film" target="17" />
       <module name="gateway" target="17" />
       <module name="screening" target="17" />
+      <module name="ticket" target="17" />
       <module name="user" target="17" />
     </bytecodeTargetLevel>
   </component>
@@ -48,6 +50,7 @@
       <module name="film" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="screening" options="-parameters" />
+      <module name="ticket" options="-parameters" />
       <module name="user" options="-parameters" />
     </option>
   </component>

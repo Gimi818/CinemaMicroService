@@ -1,7 +1,11 @@
 
-M
-java:S1854<"8Remove this useless assignment to local variable "film".(¤»œ
->
-java:S1481<")Remove this unused "film" local variable.(¤»œ
-U
-java:S1118H":Add a private constructor to hide the implicit public one.(øÊê®úÿÿÿÿ
+o
+java:S6204."RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ê‚¬¼Ç1
+o
+java:S62047"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ì‚¬¼Ç1
+T
+java:S1854<"8Remove this useless assignment to local variable "film".(¤»œ8ì‚¬¼Ç1
+E
+java:S1481<")Remove this unused "film" local variable.(¤»œ8í‚¬¼Ç1
+\
+java:S1118H":Add a private constructor to hide the implicit public one.(øÊê®úÿÿÿÿ8î‚¬¼Ç1
