@@ -5,14 +5,15 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+
 server:
-  port: 8090
+  port: 9010
 spring:
   application:
-    name: users
+    name: tickets
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5111/users
+    url: jdbc:postgresql://localhost:5555/tickets
     username: postgres
     password: password
   jpa:
@@ -23,14 +24,12 @@ spring:
 
 application:
   config:
+    screenings-url: http://localhost:8060/api/v1/screenings
+    users-url: http://localhost:8090/api/v1/users
     emailSender-url: http://localhost:8022/api/v1
-
+    currencies-url: http://localhost:8000/api/v1/codes
 
 management:
   tracing:
     sampling:
       probability: 1.0
-
-
-
-
