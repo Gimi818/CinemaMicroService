@@ -35,7 +35,11 @@ spring:
         - id: tickets
           uri: http://localhost:9010
           predicates:
-            - Path=/api/v1/booking/**
+            - Path=/api/v1/book/**
+        - id: currencies
+          uri: http://localhost:8000
+          predicates:
+            - Path=/api/v1/codes/**
 management:
   tracing:
     sampling:
