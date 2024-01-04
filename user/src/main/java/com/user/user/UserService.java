@@ -25,7 +25,7 @@ public class UserService {
     private final UserRepository repository;
     private final UserMapper userMapper;
     private final ConfirmUser confirmUser;
-  //  private final PasswordEncoderService passwordEncoderService;
+    private final PasswordEncoderService passwordEncoderService;
 
 
     @Transactional
@@ -51,8 +51,7 @@ public class UserService {
         return User.builder()
                 .lastName(requestDto.lastName())
                 .firstName(requestDto.firstName())
-              //  .password(passwordEncoderService.encodePassword(requestDto.password()))
-                .password(requestDto.password())
+                .password(passwordEncoderService.encodePassword(requestDto.password()))
                 .accountType(AccountType.UNCONFIRMED)
                 .confirmationToken(confirmUser.generateConfirmationToken())
                 .email(requestDto.email())

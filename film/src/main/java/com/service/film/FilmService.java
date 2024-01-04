@@ -9,7 +9,7 @@ import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
-
+import static com.service.film.FilmService.ErrorMessages.*;
 import java.util.List;
 import java.util.stream.Collectors;
 @Service
@@ -28,13 +28,13 @@ public class FilmService {
     }
 
     public FilmResponseDto findFilmById(Long id) {
-        Film film = repository.findById(id).orElseThrow(() -> new NotFoundException(id));
+        Film film = repository.findById(id).orElseThrow(() -> new NotFoundException(FILM_NOT_FOUND,id));
         log.info("Found film with ID {}", id);
         return mapper.entityToDto(film);
     }
 
     public Film findById(Long id) {
-        Film film = repository.findById(id).orElseThrow(() -> new NotFoundException(id));
+        Film film = repository.findById(id).orElseThrow(() -> new NotFoundException(FILM_NOT_FOUND,id));
         log.info("Found film with ID {}", id);
         return film;
     }
@@ -57,7 +57,7 @@ public class FilmService {
 
     @Transactional
     public void deleteFilm(Long id) {
-        Film film = repository.findById(id).orElseThrow(() -> new NotFoundException(id));
+        repository.findById(id).orElseThrow(() -> new NotFoundException(FILM_NOT_FOUND,id));
         log.info("Film with id {} deleted", id);
         repository.deleteById(id);
     }
@@ -71,6 +71,7 @@ public class FilmService {
 
     static final class ErrorMessages {
         static final String FILM_ALREADY_EXIST = "The film with title %s already exists.";
+        static final String FILM_NOT_FOUND = "The film with id %s not found";
 
     }
 }

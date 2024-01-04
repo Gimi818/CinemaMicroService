@@ -26,7 +26,7 @@ class TicketController {
     }
 
     static final class Routes {
-        static final String ROOT = "/book";
+        static final String ROOT = "/api/v1/book";
         static final String BOOKING = ROOT + "/{userId}/{screeningId}";
 
 

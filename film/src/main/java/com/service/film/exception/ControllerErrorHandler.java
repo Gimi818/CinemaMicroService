@@ -15,7 +15,7 @@ public class ControllerErrorHandler {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(ChangeSetPersister.NotFoundException.class)
     @ResponseBody
-    public ErrorResponse NotFound(NotFoundException exception) {
+    public ErrorResponse notFound(NotFoundException exception) {
         final String message = exception.getMessage();
         log.error(message);
         return new
@@ -24,7 +24,7 @@ public class ControllerErrorHandler {
     @ResponseStatus(HttpStatus.CONFLICT)
     @ExceptionHandler(AlreadyExistException.class)
     @ResponseBody
-    public ErrorResponse ExistException(AlreadyExistException exception) {
+    public ErrorResponse existException(AlreadyExistException exception) {
         final String message = exception.getMessage();
         log.error(message);
         return new

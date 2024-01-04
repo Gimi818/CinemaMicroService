@@ -35,11 +35,7 @@ public class UserController {
         UserResponseDto userResponseDto = service.findUserById(id);
         return ResponseEntity.status(HttpStatus.OK).body(userResponseDto);
     }
-//    @GetMapping
-//    public User findUser(@PathVariable Long id){
-//        User user = service.findUser(id);
-//        re
-//    }
+
 
     static final class Routes {
         static final String ROOT = "/api/v1/users";
