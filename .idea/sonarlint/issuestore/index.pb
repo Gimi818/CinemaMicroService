@@ -91,8 +91,6 @@ Q.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2023_20_42__Changes_.x
 \.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2023_20_42_[Changes]1/shelved.patch,b\b\bbad686c041903b58c259e9da143c9464c1891fb
 ‹
 [.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2023_20_42_[Changes]/shelved.patch,3\a\3a75fb21279f93b3338315791066bab93da12d10
-j
-:.idea/dataSources/b68d1e11-a570-4bc8-813a-b494ed75f38f.xml,e\8\e8579218484910e168da479acb5e4945d0c40057
 
 O.idea/shelf/Uncommitted_changes_before_Update_at_07_12_2023_22_22__Changes_.xml,0\6\06862144b9d2404ff94460e86d5bdb1ae5cb0b4c
 :
@@ -268,3 +266,11 @@ t
 Dcurrencies/src/main/java/com/currencies/exception/ErrorResponse.java,a\1\a1272f6e739e17956cad7d69e379f5304fa946ae
 }
 Mcurrencies/src/main/java/com/currencies/exception/ControllerErrorHandler.java,b\2\b2cb0c817174b824d9481fb625a13e0ae1a5c946
+?
+gateway/pom.xml,4\b\4b316bc60d1cfae51045f6fc8e58a8ae31f03ff3
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+€
+Puser/src/main/java/com/user/user/exception/exceptions/AlreadyExistException.java,c\b\cb425717950f86dc8d8a06521a462a99e5ff2de4
+Œ
+\screening/src/main/java/com/screening/common/exception/exceptions/AlreadyTakenException.java,a\9\a965de32016d7e852df5eb40ef24a477e0742902
