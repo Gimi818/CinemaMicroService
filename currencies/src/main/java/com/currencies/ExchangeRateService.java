@@ -13,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import static com.currencies.ExchangeRate.create;
 import static com.currencies.ExchangeRateService.ErrorMessages.*;
 
 import java.util.List;
@@ -42,32 +43,29 @@ class ExchangeRateService {
     }
 
 
+
     public void saveCurrencyRatesFromJson(String jsonResponse) {
         try {
             ObjectMapper objectMapper = new ObjectMapper();
             List<CurrencyData> currencyDataList = objectMapper.readValue(jsonResponse, new TypeReference<List<CurrencyData>>() {
             });
 
-            for (CurrencyData currencyData : currencyDataList) {
-                for (Rate rate : currencyData.rates()) {
-                    Optional<ExchangeRate> existingExchangeRate = repository.findByCode(rate.code());
-                    if (existingExchangeRate.isPresent()) {
-                        ExchangeRate existing = existingExchangeRate.get();
-                        existing.setCurrency(rate.currency());
-                        existing.setMid(rate.mid());
-                        repository.save(existing);
-                        log.info("Update {} rate ", existing.getCurrency());
-                    } else {
-                        ExchangeRate exchangeRate = ExchangeRate.builder()
-                                .currency(rate.currency())
-                                .code(rate.code())
-                                .mid(rate.mid())
-                                .build();
-                        repository.save(exchangeRate);
-                        log.info("Added {} rate ", exchangeRate.getCurrency());
-                    }
-                }
-            }
+            currencyDataList.stream()
+                    .flatMap(currencyData -> currencyData.rates().stream())
+                    .forEach(rate -> {
+                        Optional<ExchangeRate> existingExchangeRate = repository.findByCode(rate.code());
+                        if (existingExchangeRate.isPresent()) {
+                            ExchangeRate existing = existingExchangeRate.get();
+                            existing.setCurrency(rate.currency());
+                            existing.setMid(rate.mid());
+                            repository.save(existing);
+                            log.info("Update {} rate ", existing.getCurrency());
+                        } else {
+                            ExchangeRate exchangeRate = repository.save(create(rate.currency(), rate.code(), rate.mid()));
+                            log.info("Added {} rate ", exchangeRate.getCurrency());
+                        }
+                    });
+
             addPLNRate();
         } catch (Exception e) {
             e.printStackTrace();
@@ -84,12 +82,8 @@ class ExchangeRateService {
     public void addPLNRate() {
         Optional<ExchangeRate> plnExchangeRate = repository.findByCode("PLN");
         if (plnExchangeRate.isEmpty()) {
-            ExchangeRate newPlnExchangeRate = ExchangeRate.builder()
-                    .currency("Polski Złoty")
-                    .code("PLN")
-                    .mid(1.0)
-                    .build();
-            repository.save(newPlnExchangeRate);
+            ExchangeRate exchangeRate = create("Polski Złoty","PLN",1.0);
+            repository.save(exchangeRate);
             log.info("Added PLN rate   ");
         }
     }
