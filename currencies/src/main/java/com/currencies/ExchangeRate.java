@@ -18,4 +18,13 @@ public class ExchangeRate {
     private String code;
     private double mid;
 
+
+    public static ExchangeRate create(String currency, String code, double mid) {
+        return ExchangeRate.builder()
+                .currency(currency)
+                .code(code)
+                .mid(mid)
+                .build();
+    }
+
 }
