@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Added factory pattern and change loops to streams">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e4a688ff5a4feb03ede5f066f520959fc1e6950" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e4a688ff5a4feb03ede5f066f520959fc1e6950" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562f6bfead9c546bc9c13ccb46cd94b4d8b52659" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/562f6bfead9c546bc9c13ccb46cd94b4d8b52659" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/779bf18597e592139d1fc069c1f9546f956d52c0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/779bf18597e592139d1fc069c1f9546f956d52c0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5c4471b95b1abbc8d9a9f9002189972e1df7724" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5c4471b95b1abbc8d9a9f9002189972e1df7724" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdfe2e323fad8b1bcfe52f68e21783f120cd711e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdfe2e323fad8b1bcfe52f68e21783f120cd711e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e81ce2d6b0cc32197c3da78d5002bcddd66bbbba" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e81ce2d6b0cc32197c3da78d5002bcddd66bbbba" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed67bc8ae8c010f46077abf412943a9140332ea1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed67bc8ae8c010f46077abf412943a9140332ea1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Configuration">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/film/src/test/java/com/service/film/FilmControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/film/src/test/java/com/service/film/FilmServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/film/film.iml" beforeDir="false" afterPath="$PROJECT_DIR$/film/film.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/film/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/film/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,13 +27,14 @@
         <option value="Interface" />
         <option value="Record" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/ticketing_system" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,34 +54,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gimi/Desktop/CinemaMicroService/emailsender/src/main/resources&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;751887dbbf50f72c2f4fdb7a416a48af&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/Gimi/Desktop/CinemaMicroService/emailsender/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "751887dbbf50f72c2f4fdb7a416a48af",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -94,8 +94,14 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\emailsender\src\main\resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.screening" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.service.film" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -106,7 +112,77 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="JUnit.FilmServiceTest">
+    <configuration name="All in film" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="film" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="film" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.service.film.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.service.film" />
+      <option name="MAIN_CLASS_NAME" value="com.service.film.FilmControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmControllerTest.should_find_film_by_id" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="film" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.service.film.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.service.film" />
+      <option name="MAIN_CLASS_NAME" value="com.service.film.FilmControllerTest" />
+      <option name="METHOD_NAME" value="should_find_film_by_id" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="film" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.service.film.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.service.film" />
+      <option name="MAIN_CLASS_NAME" value="com.service.film.FilmServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilmServiceTest.should_find_film_by_id2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="film" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.service.film.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.service.film" />
+      <option name="MAIN_CLASS_NAME" value="com.service.film.FilmServiceTest" />
+      <option name="METHOD_NAME" value="should_find_film_by_id2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.configserver.ConfigServerApplication" />
@@ -121,19 +197,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="discovery" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.discovery.DiscoveryApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.discovery.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EmailSenderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="emailsender" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.emailsender.EmailSenderApplication" />
@@ -144,19 +207,6 @@
     <configuration name="FilmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="film" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.service.film.FilmApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gateway.GatewayApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,37 +238,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="ticket: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="ticket/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="user: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="user/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.DiscoveryApplication" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.ticket: Compose Deployment" />
-        <item itemvalue="Docker.user: Compose Deployment" />
+        <item itemvalue="JUnit.FilmServiceTest" />
+        <item itemvalue="JUnit.FilmServiceTest.should_find_film_by_id2" />
+        <item itemvalue="JUnit.All in film" />
+        <item itemvalue="JUnit.FilmControllerTest" />
+        <item itemvalue="JUnit.FilmControllerTest.should_find_film_by_id" />
       </list>
     </recent_temporary>
   </component>
@@ -263,14 +289,7 @@
       <workItem from="1703065207290" duration="115000" />
       <workItem from="1704381345836" duration="8935000" />
       <workItem from="1704470600877" duration="6156000" />
-      <workItem from="1704528257148" duration="482000" />
-    </task>
-    <task id="LOCAL-00002" summary="Added docker-compose with configuration">
-      <created>1701980174317</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1701980174317</updated>
+      <workItem from="1704528257148" duration="3368000" />
     </task>
     <task id="LOCAL-00003" summary="Created FilmClient">
       <created>1701980206794</created>
@@ -608,7 +627,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704473253450</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Configuration">
+      <created>1704528894790</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1704528894791</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,7 +666,6 @@
     <MESSAGE value="Created SendEmailBody record" />
     <MESSAGE value="Added messages.properties with messages" />
     <MESSAGE value="MicroServices configuration" />
-    <MESSAGE value="Configuration" />
     <MESSAGE value="Created dto class" />
     <MESSAGE value="Created TicketPriceCalculator" />
     <MESSAGE value="Created enum classes" />
@@ -652,6 +677,10 @@
     <MESSAGE value="Code refactoring" />
     <MESSAGE value="Added create method" />
     <MESSAGE value="Added factory pattern and change loops to streams" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added factory pattern and change loops to streams" />
+    <MESSAGE value="Configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuration" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CinemaMicroService$All_in_film.ic" NAME="All in film Coverage Results" MODIFIED="1704532111118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
