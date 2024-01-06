@@ -19,7 +19,7 @@ import static com.screening.screening.ScreeningValidate.ErrorMessages.*;
 
 @Component
 @AllArgsConstructor
- class ScreeningValidate {
+class ScreeningValidate {
     private final ScreeningRepository repository;
 
     public void checkCorrectData(LocalDate date) {
@@ -64,7 +64,7 @@ import static com.screening.screening.ScreeningValidate.ErrorMessages.*;
         }
     }
 
-    private void checkNumberOfScreeningsDuringDay(List<Screening> screeningsOnSameDay) {
+    public void checkNumberOfScreeningsDuringDay(List<Screening> screeningsOnSameDay) {
         if (screeningsOnSameDay.size() >= 5) {
             throw new TooManyScreeningException(TOO_MANY_SCREENINGS);
         }

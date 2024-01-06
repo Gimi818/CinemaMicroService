@@ -4,16 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Configuration">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/film/src/test/java/com/service/film/FilmControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/film/src/test/java/com/service/film/FilmServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Created FilmClientTest with tests">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_api_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_zerodep_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_23_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rnorth_duct_tape_duct_tape_1_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_database_commons_1_18_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_jdbc_1_18_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_postgresql_1_19_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_testcontainers_1_18_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5c4471b95b1abbc8d9a9f9002189972e1df7724" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5c4471b95b1abbc8d9a9f9002189972e1df7724" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film/film.iml" beforeDir="false" afterPath="$PROJECT_DIR$/film/film.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/film/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,36 +63,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Gimi/Desktop/CinemaMicroService/emailsender/src/main/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "751887dbbf50f72c2f4fdb7a416a48af",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Gimi/Desktop/CinemaMicroService/emailsender/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;751887dbbf50f72c2f4fdb7a416a48af&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -101,7 +110,9 @@
       <recent name="com.screening" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.service.film" />
+      <recent name="com.screening.seat" />
+      <recent name="com.screening.screening.client" />
+      <recent name="com.screening.screening" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -112,73 +123,49 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FilmServiceTest">
-    <configuration name="All in film" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="film" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilmControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="film" />
+  <component name="RunManager" selected="JUnit.SeatServiceTest">
+    <configuration name="FilmClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="screening" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.service.film.*" />
+          <option name="PATTERN" value="com.screening.screening.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.service.film" />
-      <option name="MAIN_CLASS_NAME" value="com.service.film.FilmControllerTest" />
+      <option name="PACKAGE_NAME" value="com.screening.screening.client" />
+      <option name="MAIN_CLASS_NAME" value="com.screening.screening.client.FilmClientTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FilmControllerTest.should_find_film_by_id" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="film" />
+    <configuration name="FilmClientTest.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="screening" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.service.film.*" />
+          <option name="PATTERN" value="com.screening.screening.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.service.film" />
-      <option name="MAIN_CLASS_NAME" value="com.service.film.FilmControllerTest" />
-      <option name="METHOD_NAME" value="should_find_film_by_id" />
+      <option name="PACKAGE_NAME" value="com.screening.screening.client" />
+      <option name="MAIN_CLASS_NAME" value="com.screening.screening.client.FilmClientTest" />
+      <option name="METHOD_NAME" value="testFindById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FilmServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="film" />
+    <configuration name="SeatServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="screening" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.service.film.*" />
+          <option name="PATTERN" value="com.screening.seat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.service.film" />
-      <option name="MAIN_CLASS_NAME" value="com.service.film.FilmServiceTest" />
+      <option name="PACKAGE_NAME" value="com.screening.seat" />
+      <option name="MAIN_CLASS_NAME" value="com.screening.seat.SeatServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilmServiceTest.should_find_film_by_id2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="film" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.service.film.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.service.film" />
-      <option name="MAIN_CLASS_NAME" value="com.service.film.FilmServiceTest" />
-      <option name="METHOD_NAME" value="should_find_film_by_id2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,6 +184,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="discovery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.discovery.DiscoveryApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.discovery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmailSenderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="emailsender" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.emailsender.EmailSenderApplication" />
@@ -207,6 +207,19 @@
     <configuration name="FilmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="film" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.service.film.FilmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gateway.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FilmServiceTest" />
-        <item itemvalue="JUnit.FilmServiceTest.should_find_film_by_id2" />
-        <item itemvalue="JUnit.All in film" />
-        <item itemvalue="JUnit.FilmControllerTest" />
-        <item itemvalue="JUnit.FilmControllerTest.should_find_film_by_id" />
+        <item itemvalue="JUnit.SeatServiceTest" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.DiscoveryApplication" />
+        <item itemvalue="JUnit.FilmClientTest" />
+        <item itemvalue="JUnit.FilmClientTest.testFindById" />
       </list>
     </recent_temporary>
   </component>
@@ -289,49 +302,8 @@
       <workItem from="1703065207290" duration="115000" />
       <workItem from="1704381345836" duration="8935000" />
       <workItem from="1704470600877" duration="6156000" />
-      <workItem from="1704528257148" duration="3368000" />
-    </task>
-    <task id="LOCAL-00003" summary="Created FilmClient">
-      <created>1701980206794</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1701980206794</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added new configuration">
-      <created>1701980257780</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1701980257780</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added new dependencies">
-      <created>1701980320643</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1701980320643</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Created screenings.yml configuration">
-      <created>1701980348972</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1701980348972</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Code refactoring">
-      <created>1701980383037</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1701980383037</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Code refactoring">
-      <created>1701983550446</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983550446</updated>
+      <workItem from="1704528257148" duration="482000" />
+      <workItem from="1704540726025" duration="3651000" />
     </task>
     <task id="LOCAL-00009" summary="Created Seat Entity">
       <created>1701983575108</created>
@@ -627,14 +599,56 @@
       <option name="project" value="LOCAL" />
       <updated>1704473253450</updated>
     </task>
-    <task id="LOCAL-00051" summary="Configuration">
-      <created>1704528894790</created>
+    <task id="LOCAL-00051" summary="Added properties to pom.xml for testing">
+      <created>1704553277516</created>
       <option name="number" value="00051" />
       <option name="presentableId" value="LOCAL-00051" />
       <option name="project" value="LOCAL" />
-      <updated>1704528894791</updated>
+      <updated>1704553277516</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Created ScreeningServiceTest">
+      <created>1704553295291</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1704553295292</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Created ScreeningValidate with tests">
+      <created>1704553310565</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1704553310565</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Created ScreeningValidate with tests">
+      <created>1704553324707</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1704553324707</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Created ScreeningControllerTest with tests">
+      <created>1704553343811</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1704553343811</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Created SeatServiceTest with tests">
+      <created>1704553356673</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1704553356673</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Created FilmClientTest with tests">
+      <created>1704553369445</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1704553369446</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -653,12 +667,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added dependencies to pom.xml" />
-    <MESSAGE value="Created GenerateQrCode" />
-    <MESSAGE value="Created EmailWithTicketPdf" />
-    <MESSAGE value="Created EmailSenderApplication" />
-    <MESSAGE value="Created ConfirmationEmailController with endpoint SEND_MAIL" />
-    <MESSAGE value="Created docker-compose" />
     <MESSAGE value="Created EmailSenderClient" />
     <MESSAGE value="Added new configuration to gateway" />
     <MESSAGE value="Added new dependencies" />
@@ -666,6 +674,7 @@
     <MESSAGE value="Created SendEmailBody record" />
     <MESSAGE value="Added messages.properties with messages" />
     <MESSAGE value="MicroServices configuration" />
+    <MESSAGE value="Configuration" />
     <MESSAGE value="Created dto class" />
     <MESSAGE value="Created TicketPriceCalculator" />
     <MESSAGE value="Created enum classes" />
@@ -677,10 +686,21 @@
     <MESSAGE value="Code refactoring" />
     <MESSAGE value="Added create method" />
     <MESSAGE value="Added factory pattern and change loops to streams" />
-    <MESSAGE value="Configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuration" />
+    <MESSAGE value="Added properties to pom.xml for testing" />
+    <MESSAGE value="Created ScreeningServiceTest" />
+    <MESSAGE value="Created ScreeningValidate with tests" />
+    <MESSAGE value="Created ScreeningControllerTest with tests" />
+    <MESSAGE value="Created SeatServiceTest with tests" />
+    <MESSAGE value="Created FilmClientTest with tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created FilmClientTest with tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CinemaMicroService$All_in_film.ic" NAME="All in film Coverage Results" MODIFIED="1704532111118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/CinemaMicroService$FilmServiceTest.ic" NAME="FilmServiceTest Coverage Results" MODIFIED="1704532422038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.service.film.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CinemaMicroService$FilmClientTest.ic" NAME="FilmClientTest Coverage Results" MODIFIED="1704543195037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.screening.screening.client.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,0 +1,7 @@
+
+o
+java:S6204U"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ชจน8ร๏อ๐อ1
+o
+java:S6204i"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ชจน8ฦ๏อ๐อ1
+\
+java:S1118m":Add a private constructor to hide the implicit public one.(๘ส๊ฎ๚ÿÿÿÿ8ว๏อ๐อ1
