@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Created FilmClientTest with tests">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_api_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_zerodep_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_23_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rnorth_duct_tape_duct_tape_1_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_database_commons_1_18_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_jdbc_1_18_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_postgresql_1_19_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_testcontainers_1_18_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5c4471b95b1abbc8d9a9f9002189972e1df7724" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5c4471b95b1abbc8d9a9f9002189972e1df7724" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Configuration">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_6_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/test/java/com/user/confirmation/ConfirmUserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/test/java/com/user/user/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/test/java/com/user/user/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e81ce2d6b0cc32197c3da78d5002bcddd66bbbba" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e81ce2d6b0cc32197c3da78d5002bcddd66bbbba" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/generated-sources/annotations/com/user/user/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/target/generated-sources/annotations/com/user/user/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +77,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;751887dbbf50f72c2f4fdb7a416a48af&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -110,6 +104,8 @@
       <recent name="com.screening" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.user.confirmation" />
+      <recent name="com.user.user" />
       <recent name="com.screening.seat" />
       <recent name="com.screening.screening.client" />
       <recent name="com.screening.screening" />
@@ -123,48 +119,63 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeatServiceTest">
-    <configuration name="FilmClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="screening" />
+  <component name="RunManager" selected="JUnit.ConfirmUserTest.should_generate_confirmation_email">
+    <configuration name="ConfirmUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.screening.screening.client.*" />
+          <option name="PATTERN" value="com.user.confirmation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.screening.screening.client" />
-      <option name="MAIN_CLASS_NAME" value="com.screening.screening.client.FilmClientTest" />
+      <option name="PACKAGE_NAME" value="com.user.confirmation" />
+      <option name="MAIN_CLASS_NAME" value="com.user.confirmation.ConfirmUserTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FilmClientTest.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="screening" />
+    <configuration name="ConfirmUserTest.should_generate_confirmation_email" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.screening.screening.client.*" />
+          <option name="PATTERN" value="com.user.confirmation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.screening.screening.client" />
-      <option name="MAIN_CLASS_NAME" value="com.screening.screening.client.FilmClientTest" />
-      <option name="METHOD_NAME" value="testFindById" />
+      <option name="PACKAGE_NAME" value="com.user.confirmation" />
+      <option name="MAIN_CLASS_NAME" value="com.user.confirmation.ConfirmUserTest" />
+      <option name="METHOD_NAME" value="should_generate_confirmation_email" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeatServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="screening" />
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.screening.seat.*" />
+          <option name="PATTERN" value="com.user.user.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.screening.seat" />
-      <option name="MAIN_CLASS_NAME" value="com.screening.seat.SeatServiceTest" />
+      <option name="PACKAGE_NAME" value="com.user.user" />
+      <option name="MAIN_CLASS_NAME" value="com.user.user.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.user.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.user.user" />
+      <option name="MAIN_CLASS_NAME" value="com.user.user.UserServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,19 +191,6 @@
     <configuration name="CurrenciesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="currencies" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.currencies.CurrenciesApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="discovery" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.discovery.DiscoveryApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.discovery.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,11 +251,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SeatServiceTest" />
+        <item itemvalue="JUnit.ConfirmUserTest.should_generate_confirmation_email" />
+        <item itemvalue="JUnit.ConfirmUserTest" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.DiscoveryApplication" />
-        <item itemvalue="JUnit.FilmClientTest" />
-        <item itemvalue="JUnit.FilmClientTest.testFindById" />
       </list>
     </recent_temporary>
   </component>
@@ -304,6 +302,7 @@
       <workItem from="1704470600877" duration="6156000" />
       <workItem from="1704528257148" duration="482000" />
       <workItem from="1704540726025" duration="3651000" />
+      <workItem from="1704553656409" duration="3400000" />
     </task>
     <task id="LOCAL-00009" summary="Created Seat Entity">
       <created>1701983575108</created>

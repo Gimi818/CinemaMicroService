@@ -276,3 +276,5 @@ Jscreening/src/test/java/com/screening/screening/ScreeningValidateTest.java,3\a
 Mscreening/src/main/java/com/screening/screening/dto/ScreeningResponseDto.java,2\d\2d3d2de27d8cd9b153faee6cdb4b264f3e5fa2a3
 |
 Lscreening/src/test/java/com/screening/screening/ScreeningControllerTest.java,7\2\7270cd8e4fe277b7a3f11aecb6fc543e310845df
+v
+Fscreening/src/main/java/com/screening/screening/client/FilmClient.java,8\c\8c9bbdd0213b74f71d375f57810337c529cfe325
