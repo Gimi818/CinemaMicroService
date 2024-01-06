@@ -338,3 +338,13 @@ k
 ;film/src/main/java/com/service/film/dto/CreatedFilmDto.java,f\3\f379327014de1b01feeb3ed8d9c0f1fccccd172e
 k
 ;film/src/main/java/com/service/film/dto/FilmRequestDto.java,d\2\d2534d49cfd0cc646354dc623c11ea267882fb24
+B
+screening/mvnw.cmd,9\8\9865241500a38a200e3b7b34e54c0a976f9b73af
+t
+Dscreening/src/test/java/com/screening/ScreeningApplicationTests.java,9\7\97c4976653b9af73c821aabffc59547c561d3aa4
+y
+Iscreening/src/test/java/com/screening/screening/ScreeningServiceTest.java,4\7\47543064a7a7d2d007bf9df4a566b396c9479a3f
+z
+Jscreening/src/test/java/com/screening/screening/ScreeningValidateTest.java,3\a\3a6ab0cb3d599faf14e3478fc98324d34f6acb33
+|
+Lscreening/src/test/java/com/screening/screening/ScreeningControllerTest.java,7\2\7270cd8e4fe277b7a3f11aecb6fc543e310845df
