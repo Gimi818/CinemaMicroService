@@ -41,4 +41,4 @@ The application is deployed on Docker and incorporates Swagger for documentation
 
   ## Microservice Architecture
   
-  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/microservice-architecture/architecture.PNG" width="700" heigt="700"/>
+  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/microservice-architecture/architecture.PNG" width="1000" heigt="700"/>
