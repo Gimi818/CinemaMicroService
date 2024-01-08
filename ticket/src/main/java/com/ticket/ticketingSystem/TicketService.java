@@ -1,6 +1,7 @@
 package com.ticket.ticketingSystem;
 
 import com.ticket.common.dto.*;
+import com.ticket.common.exception.exceptions.NotFoundException;
 import com.ticket.feignClient.EmailSenderClient;
 import com.ticket.feignClient.ScreeningClient;
 import com.ticket.feignClient.UserClient;
@@ -16,6 +17,7 @@ import com.ticket.common.enums.TicketStatus;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import static com.ticket.ticketingSystem.TicketService.ErrorMessages.NOT_FOUND_BY_ID;
 import static com.ticket.ticketingSystem.TicketService.ErrorMessages.TOO_LATE_TO_BOOK;
 
 @Service
@@ -70,12 +72,12 @@ class TicketService {
                 .build();
     }
 
-//    @Transactional
-//    public void cancelTicket(Long ticketId) {
-//        Ticket ticket = ticketRepository.findById(ticketId).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, ticketId));
-//        ticket.setStatus(TicketStatus.CANCELLED);
-//        ticketRepository.delete(ticket);
-//    }
+    @Transactional
+    public void cancelTicket(Long ticketId) {
+        Ticket ticket = ticketRepository.findById(ticketId).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, ticketId));
+        ticket.setStatus(TicketStatus.CANCELLED);
+        ticketRepository.delete(ticket);
+    }
 
     public void checkBookingTime(ScreeningDto screening) {
 
@@ -92,6 +94,6 @@ class TicketService {
 
     static final class ErrorMessages {
         static final String TOO_LATE_TO_BOOK = "Too late to book a ticket";
-
+        static final String NOT_FOUND_BY_ID = "Not found ticket by Id";
     }
 }
