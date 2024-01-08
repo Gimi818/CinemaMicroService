@@ -9,10 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="emailsender" />
-        <module name="discovery" />
         <module name="gateway" />
+        <module name="discovery" />
       </profile>
-
+      <profile name="Annotation profile for screening" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
