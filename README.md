@@ -42,3 +42,97 @@ The application is deployed on Docker and incorporates Swagger for documentation
   ## Microservice Architecture
   
   <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/microservice-architecture/architecture.PNG" width="1000" heigt="700"/>
+
+   ## To run the application, follow these steps :
+- Install IntelliJ IDEA and Docker Desktop on your computer.
+- Run Docker Desktop.
+- Clone the repository in IntelliJ IDEA using the link https://github.com/Gimi818/Cinema
+- Run docker-compose up in the terminal. 
+- Run the applications in IntelliJ IDEA.
+- Try the applications in Postaman, the steps on how to do it are below.
+ 
+ ## How to use application in Postman:
+ 
+    Step 1 :
+    POST localhost:8222/api/v1/users/registration
+    Enter your data.
+    JSON:
+    {
+     "firstName":"Wojciech",
+     "lastName":"Gmiterek",
+     "email":"cinemaemailtest@gmail.com",
+     "password":"password",
+    "repeatedPassword" :"password"
+    }
+  
+  <img src="https://github.com/Gimi818/cinema/blob/master/steps/1.PNG" width="500" heigt="700"/>
+
+    Step 2 :
+    Click on the account activation link.
+
+  <img src="https://github.com/Gimi818/cinema/blob/master/steps/1.1_email.PNG" width="500" heigt="700"/>
+  
+    Step 3 :
+    GET localhost:8222/api/v1/screenings?date=2024-02-25
+    Select the desired cinema date, input it into the URL, and discover a film you'd like to watch.
+    (screenings are available from 2023-11-20 to 2023-12-05)
+    
+   <img src="https://github.com/Gimi818/cinema/blob/master/steps/2.0_Screenings.png" width="500" heigt="700"/>
+
+    Step 4 :
+    GET localhost:8222/api/v1/screenings/1
+    Enter the film ID into the URL to check the available seats for the screening.
+    
+   <img src="https://github.com/Gimi818/cinema/blob/master/steps/3.0_seats.PNG" width="500" heigt="700"/>
+
+    Step 5 :
+    POST localhost:8222/api/v1/book/1/1
+    Enter the user ID and then the film ID.
+    Choose the ticket type NORMAL or REDUCE if you are a student, you are qualified for a discount.
+    Select the currency in which you would like to receive the ticket price, you can choose from 34 currencies. 
+    Send request localhost:8222/api/v1/codes and check available currencies.
+    Enter the row number or seat number. 
+    JSON:
+    {
+     "ticketType":"REDUCE",
+     "currency":"USD",
+     "rowsNumber":7,
+     "seatInRow": 5
+    }
+  
+  <img src="https://github.com/Gimi818/cinema/blob/master/steps/bookingTicket.PNG" width="500" heigt="700"/>
+
+    Step 6 :
+    You have received an email with a PDF ticket containing the details along with a QR code confirming your purchase.
+    Scan the QR code and check purchase details
+    
+   <img src="https://github.com/Gimi818/cinema/blob/master/steps/ticket.PNG"  width="500" heigt="700"/>
+
+
+    Add the film to the database:
+    POST localhost:8222/api/v1/films
+    Enter the film data.
+    JSON:
+    {
+     "title": "The Equalizer 3",
+     "category": "ACTION",
+     "durationFilmInMinutes": 130
+    }
+  
+  <img src="https://github.com/Gimi818/cinema/blob/master/steps/addFilm.PNG" width="500" heigt="700"/>
+  
+    Create a screening:
+    POST localhost:8222/api/v1/screenings/26
+    Enter the ID in the URL of the film for which you want to create.
+    Enter the date and time of screening.
+    JSON:
+    {
+     "date": "2024-02-15",
+     "time": "22:30"
+     }
+  
+  <img src="https://github.com/Gimi818/cinema/blob/master/steps/addScreening.PNG" width="500" heigt="700"/>
+
+    Endpoints available in the application :
+  
+   <img src="https://github.com/Gimi818/cinema/blob/master/steps/swagger.PNG" width="500" heigt="500"/>
