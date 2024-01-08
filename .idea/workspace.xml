@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Created FilmClientTest with tests">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_api_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_zerodep_3_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_12_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_23_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rnorth_duct_tape_duct_tape_1_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_database_commons_1_18_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_jdbc_1_18_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_postgresql_1_19_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_testcontainers_1_18_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d998b5737e560ed19c6f630f5a3144880d17440" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5c4471b95b1abbc8d9a9f9002189972e1df7724" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5c4471b95b1abbc8d9a9f9002189972e1df7724" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Configuration">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/exceptions/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/ticket/ticketingSystem/TicketControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/ticket/ticketingSystem/TicketServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/ticket/ticketingSystem/ticketPriceCalculator/TicketPriceCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/ControllerErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/ControllerErrorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/target/generated-sources/annotations/com/user/user/UserMapperImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +77,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;751887dbbf50f72c2f4fdb7a416a48af&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -110,6 +104,8 @@
       <recent name="com.screening" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ticket.ticketingSystem.ticketPriceCalculator" />
+      <recent name="com.ticket.ticketingSystem" />
       <recent name="com.screening.seat" />
       <recent name="com.screening.screening.client" />
       <recent name="com.screening.screening" />
@@ -123,49 +119,50 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeatServiceTest">
-    <configuration name="FilmClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="screening" />
+  <component name="RunManager" selected="JUnit.TicketPriceCalculatorTest">
+    <configuration name="TicketControllerTest.should_book_ticket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.screening.screening.client.*" />
+          <option name="PATTERN" value="com.ticket.ticketingSystem.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.screening.screening.client" />
-      <option name="MAIN_CLASS_NAME" value="com.screening.screening.client.FilmClientTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FilmClientTest.testFindById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="screening" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.screening.screening.client.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.screening.screening.client" />
-      <option name="MAIN_CLASS_NAME" value="com.screening.screening.client.FilmClientTest" />
-      <option name="METHOD_NAME" value="testFindById" />
+      <option name="PACKAGE_NAME" value="com.ticket.ticketingSystem" />
+      <option name="MAIN_CLASS_NAME" value="com.ticket.ticketingSystem.TicketControllerTest" />
+      <option name="METHOD_NAME" value="should_book_ticket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeatServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="screening" />
+    <configuration name="TicketPriceCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticket" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.screening.seat.*" />
+          <option name="PATTERN" value="com.ticket.ticketingSystem.ticketPriceCalculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.screening.seat" />
-      <option name="MAIN_CLASS_NAME" value="com.screening.seat.SeatServiceTest" />
+      <option name="PACKAGE_NAME" value="com.ticket.ticketingSystem.ticketPriceCalculator" />
+      <option name="MAIN_CLASS_NAME" value="com.ticket.ticketingSystem.ticketPriceCalculator.TicketPriceCalculatorTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketPriceCalculatorTest.should_return_price_with_discount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ticket.ticketingSystem.ticketPriceCalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ticket.ticketingSystem.ticketPriceCalculator" />
+      <option name="MAIN_CLASS_NAME" value="com.ticket.ticketingSystem.ticketPriceCalculator.TicketPriceCalculatorTest" />
+      <option name="METHOD_NAME" value="should_return_price_with_discount" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -253,11 +250,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SeatServiceTest" />
+        <item itemvalue="JUnit.TicketPriceCalculatorTest" />
+        <item itemvalue="JUnit.TicketPriceCalculatorTest.should_return_price_with_discount" />
         <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Spring Boot.DiscoveryApplication" />
-        <item itemvalue="JUnit.FilmClientTest" />
-        <item itemvalue="JUnit.FilmClientTest.testFindById" />
+        <item itemvalue="JUnit.TicketControllerTest.should_book_ticket" />
       </list>
     </recent_temporary>
   </component>
@@ -304,6 +301,8 @@
       <workItem from="1704470600877" duration="6156000" />
       <workItem from="1704528257148" duration="482000" />
       <workItem from="1704540726025" duration="3651000" />
+      <workItem from="1704632412415" duration="5069000" />
+      <workItem from="1704706476103" duration="1398000" />
     </task>
     <task id="LOCAL-00009" summary="Created Seat Entity">
       <created>1701983575108</created>
@@ -693,6 +692,10 @@
     <MESSAGE value="Created SeatServiceTest with tests" />
     <MESSAGE value="Created FilmClientTest with tests" />
     <option name="LAST_COMMIT_MESSAGE" value="Created FilmClientTest with tests" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CinemaMicroService$All_in_film.ic" NAME="All in film Coverage Results" MODIFIED="1704532111118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
