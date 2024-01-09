@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/film/src/main/resources/database/01-create-film-table.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/film/src/main/resources/database/02-add-films.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/screening/src/main/resources/database/03-create-table-screening.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/screening/src/main/resources/database/04-create-seats-table.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/screening/src/main/resources/database/05-add-screenings.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/screening/src/main/resources/database/06-add-seats.sql" dialect="GenericSQL" />
+  </component>
+</project>

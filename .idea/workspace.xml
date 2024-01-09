@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/exceptions/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/ticket/ticketingSystem/TicketControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/ticket/ticketingSystem/TicketServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ticket/src/test/java/com/ticket/ticketingSystem/ticketPriceCalculator/TicketPriceCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Code refactoring">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_5_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_liquibase_liquibase_core_4_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/film/src/main/resources/database/01-create-film-table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/film/src/main/resources/database/02-add-films.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/film/src/main/resources/film-liquibase-changeLog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/database/03-create-table-screening.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/database/04-create-seats-table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/database/05-add-screenings.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/database/06-add-seats.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/liquibase-changeLog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/ControllerErrorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/common/exception/ControllerErrorHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/film/film.iml" beforeDir="false" afterPath="$PROJECT_DIR$/film/film.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +92,12 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "GenericSQL"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "GenericSQL"
     ]
   }
 }]]></component>
@@ -94,6 +109,7 @@
       <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\emailsender\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\microservice-architecture" />
       <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\emailsender\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -302,41 +318,9 @@
       <workItem from="1704540726025" duration="3651000" />
       <workItem from="1704632412415" duration="5069000" />
       <workItem from="1704706476103" duration="1398000" />
-    </task>
-    <task id="LOCAL-00009" summary="Created Seat Entity">
-      <created>1701983575108</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983575108</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Created SeatService and implementation of business logic">
-      <created>1701983627230</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983627230</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Created SeatRepository">
-      <created>1701983636922</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983636922</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Created SeatFacade and configuration class">
-      <created>1701983659336</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983659336</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Created SeatStatus enum">
-      <created>1701983679627</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983679627</updated>
+      <workItem from="1704716775984" duration="118000" />
+      <workItem from="1704737139512" duration="5811000" />
+      <workItem from="1704797243418" duration="7804000" />
     </task>
     <task id="LOCAL-00014" summary="Created SeatFacade and configuration class">
       <created>1701983696015</created>
@@ -646,7 +630,42 @@
       <option name="project" value="LOCAL" />
       <updated>1704553369446</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Code refactoring">
+      <created>1704710839364</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1704710839364</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Added microservice architecture.PNG">
+      <created>1704710860158</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1704710860158</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Added liquibase dependencies to pom.xml">
+      <created>1704804928691</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1704804928691</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Added liquibase classpath to configuration">
+      <created>1704804993134</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1704804993134</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Code refactoring">
+      <created>1704805049210</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805049210</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -665,9 +684,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created EmailSenderClient" />
-    <MESSAGE value="Added new configuration to gateway" />
-    <MESSAGE value="Added new dependencies" />
     <MESSAGE value="Created SecurityConfig" />
     <MESSAGE value="Created SendEmailBody record" />
     <MESSAGE value="Added messages.properties with messages" />
@@ -681,7 +697,6 @@
     <MESSAGE value="Added zipkin dependency" />
     <MESSAGE value="Created zipkin docker-compose" />
     <MESSAGE value="Added new configuration" />
-    <MESSAGE value="Code refactoring" />
     <MESSAGE value="Added create method" />
     <MESSAGE value="Added factory pattern and change loops to streams" />
     <MESSAGE value="Added properties to pom.xml for testing" />
@@ -690,7 +705,11 @@
     <MESSAGE value="Created ScreeningControllerTest with tests" />
     <MESSAGE value="Created SeatServiceTest with tests" />
     <MESSAGE value="Created FilmClientTest with tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created FilmClientTest with tests" />
+    <MESSAGE value="Added microservice architecture.PNG" />
+    <MESSAGE value="Added liquibase dependencies to pom.xml" />
+    <MESSAGE value="Added liquibase classpath to configuration" />
+    <MESSAGE value="Code refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code refactoring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

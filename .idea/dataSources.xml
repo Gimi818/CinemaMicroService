@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="users@localhost" uuid="1c4fc684-c8ed-4336-8a02-5b563dbfe9d5">
+    <data-source source="LOCAL" name="films@localhost" uuid="84fcae01-e090-44e0-aca2-4519bd75c409">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5111/users</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5000/films</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="currencies@localhost" uuid="2d57d5ee-ae05-40e2-8494-4ebdd12fafd4">
+    <data-source source="LOCAL" name="screenings@localhost" uuid="401caa3a-b781-49de-945e-d0a73389a6b7">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5050/currencies</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5100/screenings</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
