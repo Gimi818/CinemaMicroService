@@ -58,7 +58,7 @@ class ScreeningValidate {
     private void minTime(ScreeningRequestDto newScreening, Film film, List<Screening> screeningsOnSameDay) {
         for (Screening existingScreening : screeningsOnSameDay) {
             var timeDifference = Duration.between(existingScreening.getTime(), newScreening.time()).toMinutes();
-            if (Math.abs(timeDifference) < film.getDurationFilmInMinutes() + 20) {
+            if (Math.abs(timeDifference) < film.durationFilmInMinutes() + 20) {
                 throw new TimeDifferenceException(TOO_SMALL_TIME_DIFFERENCE);
             }
         }

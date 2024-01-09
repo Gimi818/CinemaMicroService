@@ -4,26 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Code refactoring">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_opencsv_opencsv_5_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_liquibase_liquibase_core_4_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/film/src/main/resources/database/01-create-film-table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/film/src/main/resources/database/02-add-films.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/film/src/main/resources/film-liquibase-changeLog.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/database/03-create-table-screening.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/database/04-create-seats-table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/database/05-add-screenings.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/database/06-add-seats.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screening/src/main/resources/liquibase-changeLog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Project configuration">
+      <change afterPath="$PROJECT_DIR$/film/target/generated-sources/annotations/com/service/film/FilmMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/steps/steps/1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/steps/steps/2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/steps/steps/3.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/steps/steps/4.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/steps/steps/5.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/steps/steps/email.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/steps/steps/ticket.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/generated-sources/annotations/com/user/user/UserMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film/film.iml" beforeDir="false" afterPath="$PROJECT_DIR$/film/film.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-architecture/architecture.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/steps/microservice-architecture/architecture.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningValidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningValidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/dto/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/dto/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/database/03-create-table-screening.sql" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/database/03-create-table-screening.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/database/04-create-seats-table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/database/04-create-seats-table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/database/05-add-screenings.sql" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/database/05-add-screenings.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/database/06-add-seats.sql" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/database/06-add-seats.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/dto/CreatedUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/dto/CreatedUserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +110,8 @@
       <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\emailsender\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\steps\steps" />
+      <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\steps" />
       <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\microservice-architecture" />
       <recent name="C:\Users\Gimi\Desktop\CinemaMicroService\emailsender\src\main\resources" />
     </key>
@@ -263,6 +266,20 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.TicketControllerTest.should_book_ticket" />
+      <item itemvalue="JUnit.TicketPriceCalculatorTest" />
+      <item itemvalue="JUnit.TicketPriceCalculatorTest.should_return_price_with_discount" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.CurrenciesApplication" />
+      <item itemvalue="Spring Boot.EmailSenderApplication" />
+      <item itemvalue="Spring Boot.FilmApplication" />
+      <item itemvalue="Spring Boot.ScreeningApplication" />
+      <item itemvalue="Spring Boot.TicketApplication" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.DiscoveryApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.GatewayApplication" />
@@ -320,56 +337,7 @@
       <workItem from="1704706476103" duration="1398000" />
       <workItem from="1704716775984" duration="118000" />
       <workItem from="1704737139512" duration="5811000" />
-      <workItem from="1704797243418" duration="7804000" />
-    </task>
-    <task id="LOCAL-00014" summary="Created SeatFacade and configuration class">
-      <created>1701983696015</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983696015</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Created AbstractEntity">
-      <created>1701983707324</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983707324</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Created ScreeningAvailableSeats dto">
-      <created>1701983731329</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983731329</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Created AlreadyTakenException">
-      <created>1701983746333</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983746333</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Changed import">
-      <created>1701983761652</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1701983761652</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Added dependencies to pom.xml">
-      <created>1702063791009</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1702063791009</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Added new configuration">
-      <created>1702063829026</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1702063829026</updated>
+      <workItem from="1704797243418" duration="12017000" />
     </task>
     <task id="LOCAL-00021" summary="Created Ticket Entity">
       <created>1702063846467</created>
@@ -665,7 +633,56 @@
       <option name="project" value="LOCAL" />
       <updated>1704805049210</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Added 01-create-film-table.sql">
+      <created>1704805099043</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805099043</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Added 02-add-films.sql">
+      <created>1704805111119</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805111119</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Added 03-create-table-screening.sql">
+      <created>1704805121106</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805121106</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Added 04-create-seats-table.sql">
+      <created>1704805130906</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805130906</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Added 05-add-screenings.sql">
+      <created>1704805141717</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805141717</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Added 06-add-seats.sql">
+      <created>1704805152226</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805152226</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Project configuration">
+      <created>1704805168766</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805168767</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,13 +701,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created SecurityConfig" />
-    <MESSAGE value="Created SendEmailBody record" />
-    <MESSAGE value="Added messages.properties with messages" />
-    <MESSAGE value="MicroServices configuration" />
-    <MESSAGE value="Configuration" />
-    <MESSAGE value="Created dto class" />
-    <MESSAGE value="Created TicketPriceCalculator" />
     <MESSAGE value="Created enum classes" />
     <MESSAGE value="Created Ticket Entity" />
     <MESSAGE value="Created TicketController with endpoint" />
@@ -709,7 +719,14 @@
     <MESSAGE value="Added liquibase dependencies to pom.xml" />
     <MESSAGE value="Added liquibase classpath to configuration" />
     <MESSAGE value="Code refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code refactoring" />
+    <MESSAGE value="Added 01-create-film-table.sql" />
+    <MESSAGE value="Added 02-add-films.sql" />
+    <MESSAGE value="Added 03-create-table-screening.sql" />
+    <MESSAGE value="Added 04-create-seats-table.sql" />
+    <MESSAGE value="Added 05-add-screenings.sql" />
+    <MESSAGE value="Added 06-add-seats.sql" />
+    <MESSAGE value="Project configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project configuration" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

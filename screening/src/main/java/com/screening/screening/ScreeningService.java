@@ -44,7 +44,7 @@ class ScreeningService implements ScreeningFacade {
 
     private Film validateAndGetFilm(Long filmId) {
         Film film = filmClient.findFilmById(filmId);
-        log.info("Film found: {}", film.getTitle());
+        log.info("Film found: {}", film.id());
         return film;
     }
 
@@ -59,7 +59,7 @@ class ScreeningService implements ScreeningFacade {
 
     private Screening createAndSaveScreening(ScreeningRequestDto screeningRequestDto, Film film) {
         Screening screening = mapper.dtoToEntity(screeningRequestDto);
-        screening.setFilmId(film.getId());
+        screening.setFilmId(film.id());
         return repository.save(screening);
     }
 
