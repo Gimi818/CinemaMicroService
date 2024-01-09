@@ -46,9 +46,10 @@ The application is deployed on Docker and incorporates Swagger for documentation
    ## To run the application, follow these steps :
 - Install IntelliJ IDEA and Docker Desktop on your computer.
 - Run Docker Desktop.
-- Clone the repository in IntelliJ IDEA using the link https://github.com/Gimi818/Cinema
-- Run docker-compose up in the terminal. 
-- Run the applications in IntelliJ IDEA.
+- Clone the repository in IntelliJ IDEA using the link https://github.com/Gimi818/CinemaMicroService
+- Run docker-compose up in services: ticket, screening, user, film, currencies, zipkin in the terminal. 
+- Run the ConfigServer, DiscoveryServer, Gateway  in IntelliJ IDEA.
+- Run the other services: ticket, screening, user, film, currencies  in IntelliJ IDEA.
 - Try the applications in Postaman, the steps on how to do it are below.
  
  ## How to use application in Postman:
