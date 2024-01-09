@@ -41,7 +41,7 @@ The application is deployed on Docker and incorporates Swagger for documentation
 
   ## Microservice Architecture
   
-  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/microservice-architecture/architecture.PNG" width="1000" heigt="700"/>
+  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/microservice-architecture/architecture.PNG" width="1000" heigt="700"/>
 
    ## To run the application, follow these steps :
 - Install IntelliJ IDEA and Docker Desktop on your computer.
@@ -65,25 +65,31 @@ The application is deployed on Docker and incorporates Swagger for documentation
     "repeatedPassword" :"password"
     }
   
-  <img src="https://github.com/Gimi818/cinema/blob/master/steps/1.PNG" width="500" heigt="700"/>
+  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/1.PNG" width="500" heigt="700"/>
 
     Step 2 :
     Click on the account activation link.
 
-  <img src="https://github.com/Gimi818/cinema/blob/master/steps/1.1_email.PNG" width="500" heigt="700"/>
+  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/email.PNG" width="500" heigt="700"/>
   
     Step 3 :
-    GET localhost:8222/api/v1/screenings?date=2024-02-25
+    GET localhost:8222/api/v1/screenings?date=2024-01-18
     Select the desired cinema date, input it into the URL, and discover a film you'd like to watch.
-    (screenings are available from 2023-11-20 to 2023-12-05)
+    (screenings are available from 2024-01-10 to 2024-01-31)
     
-   <img src="https://github.com/Gimi818/cinema/blob/master/steps/2.0_Screenings.png" width="500" heigt="700"/>
+   <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/2.PNG" width="600" heigt="800"/>
 
     Step 4 :
     GET localhost:8222/api/v1/screenings/1
     Enter the film ID into the URL to check the available seats for the screening.
     
-   <img src="https://github.com/Gimi818/cinema/blob/master/steps/3.0_seats.PNG" width="500" heigt="700"/>
+   <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/3.PNG" width="500" heigt="700"/>
+
+    Step 4 :
+    GET localhost:8222/api/v1/codes
+    Check available currencies in which you can receive the ticket price.
+    
+   <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/4.PNG" width="500" heigt="700"/>
 
     Step 5 :
     POST localhost:8222/api/v1/book/1/1
@@ -96,17 +102,17 @@ The application is deployed on Docker and incorporates Swagger for documentation
     {
      "ticketType":"REDUCE",
      "currency":"USD",
-     "rowsNumber":7,
-     "seatInRow": 5
+     "rowsNumber":5,
+     "seatInRow": 8
     }
   
-  <img src="https://github.com/Gimi818/cinema/blob/master/steps/bookingTicket.PNG" width="500" heigt="700"/>
+  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/5.PNG" width="500" heigt="700"/>
 
     Step 6 :
     You have received an email with a PDF ticket containing the details along with a QR code confirming your purchase.
     Scan the QR code and check purchase details
     
-   <img src="https://github.com/Gimi818/cinema/blob/master/steps/ticket.PNG"  width="500" heigt="700"/>
+   <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/ticket.PNG"  width="500" heigt="700"/>
 
 
     Add the film to the database:
@@ -114,25 +120,23 @@ The application is deployed on Docker and incorporates Swagger for documentation
     Enter the film data.
     JSON:
     {
-     "title": "The Equalizer 3",
+     "title": "BAD BOYS 3",
      "category": "ACTION",
      "durationFilmInMinutes": 130
     }
   
-  <img src="https://github.com/Gimi818/cinema/blob/master/steps/addFilm.PNG" width="500" heigt="700"/>
+  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/6.PNG" width="500" heigt="700"/>
   
     Create a screening:
-    POST localhost:8222/api/v1/screenings/26
+    POST localhost:8222/api/v1/screenings/10
     Enter the ID in the URL of the film for which you want to create.
     Enter the date and time of screening.
     JSON:
     {
-     "date": "2024-02-15",
+     "date": "2024-02-01",
      "time": "22:30"
      }
   
-  <img src="https://github.com/Gimi818/cinema/blob/master/steps/addScreening.PNG" width="500" heigt="700"/>
+  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/7.PNG" width="500" heigt="700"/>
 
-    Endpoints available in the application :
-  
-   <img src="https://github.com/Gimi818/cinema/blob/master/steps/swagger.PNG" width="500" heigt="500"/>
+
