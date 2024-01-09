@@ -8,6 +8,8 @@ eureka:
 server:
   port: 8070
 spring:
+  liquibase:
+    change-log: classpath:film-liquibase-changeLog.xml
   application:
     name: films
   datasource:
@@ -17,7 +19,7 @@ spring:
     password: password
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 

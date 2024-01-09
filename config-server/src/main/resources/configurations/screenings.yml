@@ -16,9 +16,11 @@ spring:
     url: jdbc:postgresql://localhost:5100/screenings
     username: postgres
     password: password
+  liquibase:
+    change-log: classpath:liquibase-changeLog.xml
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 
@@ -30,3 +32,6 @@ management:
   tracing:
     sampling:
       probability: 1.0
+
+
+
