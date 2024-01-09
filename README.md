@@ -1,5 +1,5 @@
 # Cinema
-## A cinema management application with a ticketing system
+## A cinema management microservice with a ticketing system
 
 The new user registers within the application and completes the email verification process by clicking the activation link received in their email.
 Once verified, the user proceeds to select a screening date and choose a film for that specific time, while also checking the seat availability for the chosen screening.
@@ -19,8 +19,8 @@ The application is integrated with the National Bank of Poland's API, allowing c
 
 User have the authority to add new films to the database and create new screenings, specifying the date, time, and film. 
 
-I utilized a MySQL database to establish relationships within the data.
-The application is deployed on Docker and incorporates Swagger for documentation.
+I utilized a PostGres database to establish relationships within the data.
+Full containerization in DOCKER (all modules).
 
 
  ## Application is developed using following technologies:
