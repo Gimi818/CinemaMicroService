@@ -46,7 +46,7 @@ public class ScreeningController {
         return ResponseEntity.status(HttpStatus.OK).body(screeningAvailableSeats);
     }
 
-    @PostMapping(BOOKING_SEATS)
+    @PutMapping(BOOKING_SEATS)
     public void bookingSets(@PathVariable Long screeningId,@PathVariable int rowNumber,@PathVariable int seatsNumber) {
         service.bookingSets(screeningId, rowNumber, seatsNumber);
     }

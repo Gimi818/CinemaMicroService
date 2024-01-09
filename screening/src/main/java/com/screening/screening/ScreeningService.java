@@ -52,6 +52,7 @@ class ScreeningService implements ScreeningFacade {
         seatFacade.checkSeatsAvailability(id, rowNumber, seatsNumber);
     }
 
+    @Transactional
     private void validateScreeningData(ScreeningRequestDto screeningRequestDto, Film film) {
         validate.dataValidation(screeningRequestDto, film);
     }
@@ -97,6 +98,7 @@ class ScreeningService implements ScreeningFacade {
         return mapper.screeningToSeatsDto(screening);
     }
 
+    @Transactional
     private List<Seat> createSeats() {
         return IntStream.rangeClosed(1, 10)
                 .boxed()

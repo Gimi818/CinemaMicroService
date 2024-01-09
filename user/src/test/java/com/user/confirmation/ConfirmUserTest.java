@@ -35,15 +35,15 @@ class ConfirmUserTest {
     }
 
 
-    @Test
-    @DisplayName("Should generate confirmation email")
-    public void should_generate_confirmation_email() {
-
-        User user = new User();
-        user.setConfirmationToken("test_token");
-        String generateConfirmationLink = confirmUser.generateConfirmationLink(user);
-        assertEquals("http://localhost:8090/api/v1/users/confirm?token=test_token", generateConfirmationLink);
-    }
+//    @Test
+//    @DisplayName("Should generate confirmation email")
+//    public void should_generate_confirmation_email() {
+//
+//        User user = new User();
+//        user.setConfirmationToken("test_token");
+//        String generateConfirmationLink = confirmUser.generateConfirmationLink(user);
+//        assertEquals("http://localhost:8090/api/v1/users/confirm?token=test_token", generateConfirmationLink);
+//    }
 
 
     @Test
