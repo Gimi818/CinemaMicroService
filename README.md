@@ -23,9 +23,11 @@ Configuration:
 * Microservices operate on other ports and API Gateway serves as an intermediary layer between various microservices.
   This allows you to use a single port or endpoint to communicate with different services within the microservices architecture.
 * I utilized a Postgres database to establish relationships within the data.
-* All microservices are containerised in the DOCKER
+* All microservices are containerized in the DOCKER
 * Zipkin traces HTTP requests passing through various microservices in an application.
 * Eureka Server registers microservices and informs about their availability.
+* ConfigServer is responsible for centralized storage and distribution of configuration for microservices.
+* Microservices communicate with each other over HTTP by exposing endpoints and using Feign Client.
 
  ## Application is developed using following technologies:
  Core:
