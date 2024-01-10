@@ -19,9 +19,13 @@ The application is integrated with the National Bank of Poland's API, allowing c
 
 User have the authority to add new films to the database and create new screenings, specifying the date, time, and film. 
 
-I utilized a PostGres database to establish relationships within the data.
-Full containerization in DOCKER (all modules).
-
+Configuration:
+* Microservices operate on other ports and API Gateway serves as an intermediary layer between various microservices.
+  This allows you to use a single port or endpoint to communicate with different services within the microservices architecture.
+* I utilized a Postgres database to establish relationships within the data.
+* All microservices are containerised in the DOCKER
+* Zipkin traces HTTP requests passing through various microservices in an application.
+* Eureka Server registers microservices and informs about their availability.
 
  ## Application is developed using following technologies:
  Core:
@@ -100,8 +104,7 @@ Link : https://www.youtube.com/watch?v=LuNnaEmEUm8&feature=youtu.be
     POST localhost:8222/api/v1/book/1/1
     Enter the user ID and then the film ID.
     Choose the ticket type NORMAL or REDUCE if you are a student, you are qualified for a discount.
-    Select the currency in which you would like to receive the ticket price, you can choose from 34 currencies. 
-    Send request localhost:8222/api/v1/codes and check available currencies.
+    Select the currency in which you would like to receive the ticket price, you can choose from 34 currencies.
     Enter the row number or seat number. 
     JSON:
     {
