@@ -1,5 +1,5 @@
 # Cinema
-## A cinema management application with a ticketing system
+## A cinema management microservice with a ticketing system
 
 The new user registers within the application and completes the email verification process by clicking the activation link received in their email.
 Once verified, the user proceeds to select a screening date and choose a film for that specific time, while also checking the seat availability for the chosen screening.
@@ -19,9 +19,15 @@ The application is integrated with the National Bank of Poland's API, allowing c
 
 User have the authority to add new films to the database and create new screenings, specifying the date, time, and film. 
 
-I utilized a MySQL database to establish relationships within the data.
-The application is deployed on Docker and incorporates Swagger for documentation.
-
+Configuration:
+* Microservices operate on other ports and API Gateway serves as an intermediary layer between various microservices.
+  This allows you to use a single port or endpoint to communicate with different services within the microservices architecture.
+* I utilized a Postgres database to establish relationships within the data.
+* All microservices are containerized in the DOCKER
+* Zipkin traces HTTP requests passing through various microservices in an application.
+* Eureka Server registers microservices and informs about their availability.
+* ConfigServer is responsible for centralized storage and distribution of configuration for microservices.
+* Microservices communicate with each other over HTTP by exposing endpoints and using Feign Client.
 
  ## Application is developed using following technologies:
  Core:
@@ -42,6 +48,10 @@ The application is deployed on Docker and incorporates Swagger for documentation
   ## Microservice Architecture
   
   <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/microservice-architecture/architecture.PNG" width="1000" heigt="700"/>
+  
+  ## Demonstration of the use of a microservice on YouTube:
+[![Cinema](https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/youtube.PNG)](https://www.youtube.com/watch?v=LuNnaEmEUm8&feature=youtu.be)
+Link : https://www.youtube.com/watch?v=LuNnaEmEUm8&feature=youtu.be
 
    ## To run the application, follow these steps :
 - Install IntelliJ IDEA and Docker Desktop on your computer.
@@ -96,8 +106,7 @@ The application is deployed on Docker and incorporates Swagger for documentation
     POST localhost:8222/api/v1/book/1/1
     Enter the user ID and then the film ID.
     Choose the ticket type NORMAL or REDUCE if you are a student, you are qualified for a discount.
-    Select the currency in which you would like to receive the ticket price, you can choose from 34 currencies. 
-    Send request localhost:8222/api/v1/codes and check available currencies.
+    Select the currency in which you would like to receive the ticket price, you can choose from 34 currencies.
     Enter the row number or seat number. 
     JSON:
     {
