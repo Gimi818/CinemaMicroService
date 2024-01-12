@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset wgmiterek:3
+--changeset wgmiterek:1
 CREATE TABLE IF NOT EXISTS screening (
                                          id BIGSERIAL PRIMARY KEY,
                                          date DATE,

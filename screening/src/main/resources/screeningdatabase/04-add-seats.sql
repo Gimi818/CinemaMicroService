@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset wgmiterek:6
+--changeset wgmiterek:4
 INSERT INTO seats (screening_id, rows_number, seat_in_row, status)
 SELECT
     s.id AS screening_id,

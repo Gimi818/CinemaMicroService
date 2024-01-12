@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset wgmiterek:4
+--changeset wgmiterek:2
 CREATE TABLE IF NOT EXISTS seats (
                                      id BIGSERIAL PRIMARY KEY,
                                      rows_number INT NOT NULL,

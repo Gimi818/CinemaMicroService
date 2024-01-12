@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset wgmiterek:5
+--changeset wgmiterek:3
 INSERT INTO screening (date, time, film_id)
 VALUES
        ('2024-01-09', '11:00:00', 16),
