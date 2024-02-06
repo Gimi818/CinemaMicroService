@@ -2,7 +2,6 @@ package com.ticket.ticketingSystem;
 
 import com.ticket.common.dto.*;
 import com.ticket.common.exception.exceptions.NotFoundException;
-import com.ticket.feignClient.EmailSenderClient;
 import com.ticket.feignClient.ScreeningClient;
 import com.ticket.feignClient.UserClient;
 import com.ticket.common.exception.exceptions.TooLateToBookException;
@@ -28,8 +27,8 @@ class TicketService {
     private final TicketRepository ticketRepository;
     private final TicketPriceCalculator ticketPrice;
     private final ScreeningClient screeningClient;
-    private final EmailSenderClient emailSenderClient;
     private final UserClient userClient;
+    private final KafkaProducer kafkaProducer;
 
     private final TicketMapper mapper;
 
@@ -39,13 +38,13 @@ class TicketService {
         UserResponseDto user = userClient.findUserById(userId);
         ScreeningDto screening = screeningClient.findScreeningById(screeningId);
         checkBookingTime(screening);
-
         Ticket newTicket = createNewTicket(screening, user, ticketBookingDto);
-
         screeningClient.bookingSets(screeningId, ticketBookingDto.rowsNumber(), ticketBookingDto.seatInRow());
         ticketRepository.save(newTicket);
         log.info("Booking ticket with screening ID : {} row: {} seat: {}", screeningId, ticketBookingDto.rowsNumber(), ticketBookingDto.seatInRow());
-        emailSenderClient.sendEmailWithTicket(createEmail(user.email(), newTicket));
+
+        kafkaProducer.sendMessage("emailWithTicketTopic", createEmail(user.email(), newTicket));
+
         return mapper.bookedTicketToDto(newTicket);
     }
 
