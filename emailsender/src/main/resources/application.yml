@@ -1,6 +1,5 @@
-
 spring:
   application:
-    name: tickets
+    name: emailSender
   config:
     import: optional:configserver:http://localhost:8888
