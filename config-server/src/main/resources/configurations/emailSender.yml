@@ -15,3 +15,27 @@ management:
   tracing:
     sampling:
       probability: 1.0
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  username: cinemaemailtest@gmail.com
+  password: eumw bkil vcnv aiaf
+  properties:
+    mail:
+      smtp:
+        auth: true
+      smtp.starttls.enable: true
+kafka:
+  consumer:
+    bootstrap-servers: localhost:9092
+    group-id: emailSender-group
+    auto-offset-reset: earliest
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    properties:
+      spring.json.trusted.packages: com.emailsender.email.dto
+jackson:
+  serialization:
+    WRITE_DATES_AS_TIMESTAMPS: false
+  deserialization:
+    READ_DATE_TIMESTAMPS_AS_NANOSECONDS: false
