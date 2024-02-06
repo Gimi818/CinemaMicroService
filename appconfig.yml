@@ -1,0 +1,5 @@
+kafkahq:
+  connections:
+    my-cluster:
+      properties:
+        bootstrap.servers: "localhost:9092"
