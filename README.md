@@ -56,7 +56,7 @@ Configuration:
 
   ## Microservice Architecture
   
-  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/microservice-architecture/architecture.PNG" width="1000" heigt="700"/>
+  <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/microservice-architecture/architectureMS.PNG" width="1000" heigt="700"/>
   
   ## Demonstration of the use of a microservice on YouTube:
 [![Cinema](https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/youtube.PNG)](https://www.youtube.com/watch?v=LuNnaEmEUm8&feature=youtu.be)
