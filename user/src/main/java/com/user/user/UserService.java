@@ -13,8 +13,6 @@ import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
-import java.util.UUID;
-
 import static com.user.user.UserService.ErrorMessages.*;
 
 @Service
@@ -59,11 +57,6 @@ public class UserService {
     }
 
 
-//    public User findUser(Long id) {
-//        User user = repository.findById(id).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, id));
-//        log.info("Found user with ID {}", user.getId());
-//        return user;
-//    }
 
     public UserResponseDto findUserById(Long id) {
         User user = repository.findById(id).orElseThrow(() -> new NotFoundException(NOT_FOUND_BY_ID, id));

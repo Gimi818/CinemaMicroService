@@ -14,7 +14,7 @@ spring:
     name: films
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5000/films
+    url: jdbc:postgresql://localhost:5001/films
     username: postgres
     password: password
   jpa:

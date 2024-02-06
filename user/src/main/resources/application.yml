@@ -1,6 +1,6 @@
-
 spring:
   application:
-    name: tickets
+    name: users
   config:
     import: optional:configserver:http://localhost:8888
+

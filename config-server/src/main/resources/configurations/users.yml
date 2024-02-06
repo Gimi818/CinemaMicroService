@@ -32,5 +32,13 @@ management:
       probability: 1.0
 
 
+confirmation:
+  link: http://localhost:8222/api/v1/users/confirm?token=
+
+kafka:
+  bootstrap-servers: localhost:9092
+  producer:
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+
 
 

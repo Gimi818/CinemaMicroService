@@ -4,19 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Update screening list in 05-add-screenings.sql">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+    <list default="true" id="c21a0062-5ff2-4598-a166-944a8da4e95d" name="Changes" comment="Created KafkaProducerTest for Confirmation and added tests">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_16_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_16_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_5_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_6_0_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_8_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appconfig.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/film/target/generated-sources/annotations/com/service/film/FilmMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/ConfirmationEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user/target/generated-sources/annotations/com/user/user/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film/src/main/resources/database/01-create-film-table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/film/src/main/resources/filmdatabase/01-create-film-table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film/src/main/resources/database/02-add-films.sql" beforeDir="false" afterPath="$PROJECT_DIR$/film/src/main/resources/filmdatabase/02-add-films.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/film/src/main/resources/film-liquibase-changeLog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/film/src/main/resources/film-liquibase-changeLog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningController.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/java/com/screening/screening/ScreeningController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/database/03-create-table-screening.sql" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/screeningdatabase/01-create-table-screening.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/database/04-create-seats-table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/screeningdatabase/02-create-seats-table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/database/05-add-screenings.sql" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/screeningdatabase/03-add-screenings.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/database/06-add-seats.sql" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/screeningdatabase/04-add-seats.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screening/src/main/resources/liquibase-changeLog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/main/resources/liquibase-changeLog.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/feignClient/ScreeningClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/feignClient/ScreeningClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/emailSender.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/emailSender.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/films.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/films.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/tickets.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/tickets.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/users.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/users.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/EmailSenderApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/EmailSenderApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/email/dto/EmailWithTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailsender/src/main/java/com/emailsender/email/dto/EmailWithTicket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailsender/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailsender/src/test/java/com/emailsender/EmailsenderApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/emailsender/src/test/java/com/emailsender/EmailsenderApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/film/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/film/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/test/java/com/screening/screening/ScreeningControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/test/java/com/screening/screening/ScreeningControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/test/java/com/screening/screening/ScreeningServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/test/java/com/screening/screening/ScreeningServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screening/src/test/java/com/screening/screening/client/FilmClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/screening/src/test/java/com/screening/screening/client/FilmClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/TicketApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/TicketApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ticket/src/main/java/com/ticket/ticketingSystem/TicketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/UserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/ConfirmUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/confirmation/ConfirmUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/user/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/src/test/java/com/user/user/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/test/java/com/user/user/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/user.iml" beforeDir="false" afterPath="$PROJECT_DIR$/user/user.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +86,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -75,9 +102,10 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;751887dbbf50f72c2f4fdb7a416a48af&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -111,14 +139,15 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.emailsender" />
       <recent name="com.screening" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.ticket.ticketingSystem.ticketPriceCalculator" />
+      <recent name="com.emailsender.email" />
       <recent name="com.ticket.ticketingSystem" />
+      <recent name="com.user.confirmation" />
+      <recent name="com.ticket.ticketingSystem.ticketPriceCalculator" />
       <recent name="com.screening.seat" />
-      <recent name="com.screening.screening.client" />
-      <recent name="com.screening.screening" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -129,8 +158,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CurrenciesApplication">
-    <configuration name="TicketControllerTest.should_book_ticket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.KafkaEmailListenerTest">
+    <configuration name="KafkaEmailListenerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="emailsender" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.emailsender.email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.emailsender.email" />
+      <option name="MAIN_CLASS_NAME" value="com.emailsender.email.KafkaEmailListenerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaProducerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ticket" />
       <extension name="coverage">
         <pattern>
@@ -139,39 +183,38 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ticket.ticketingSystem" />
-      <option name="MAIN_CLASS_NAME" value="com.ticket.ticketingSystem.TicketControllerTest" />
-      <option name="METHOD_NAME" value="should_book_ticket" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicketPriceCalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ticket" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ticket.ticketingSystem.ticketPriceCalculator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ticket.ticketingSystem.ticketPriceCalculator" />
-      <option name="MAIN_CLASS_NAME" value="com.ticket.ticketingSystem.ticketPriceCalculator.TicketPriceCalculatorTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ticket.ticketingSystem.KafkaProducerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketPriceCalculatorTest.should_return_price_with_discount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ticket" />
+    <configuration name="KafkaProducerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ticket.ticketingSystem.ticketPriceCalculator.*" />
+          <option name="PATTERN" value="com.user.confirmation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ticket.ticketingSystem.ticketPriceCalculator" />
-      <option name="MAIN_CLASS_NAME" value="com.ticket.ticketingSystem.ticketPriceCalculator.TicketPriceCalculatorTest" />
-      <option name="METHOD_NAME" value="should_return_price_with_discount" />
+      <option name="PACKAGE_NAME" value="com.user.confirmation" />
+      <option name="MAIN_CLASS_NAME" value="com.user.confirmation.KafkaProducerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaProducerTest.should_send_message_to_kafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticket" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ticket.ticketingSystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ticket.ticketingSystem" />
+      <option name="MAIN_CLASS_NAME" value="com.ticket.ticketingSystem.KafkaProducerTest" />
+      <option name="METHOD_NAME" value="should_send_message_to_kafka" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -191,19 +234,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="discovery" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.discovery.DiscoveryApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.discovery.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EmailSenderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="emailsender" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.emailsender.EmailSenderApplication" />
@@ -214,19 +244,6 @@
     <configuration name="FilmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="film" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.service.film.FilmApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gateway.GatewayApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,27 +275,41 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="user: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="user/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="JUnit.TicketControllerTest.should_book_ticket" />
-      <item itemvalue="JUnit.TicketPriceCalculatorTest" />
-      <item itemvalue="JUnit.TicketPriceCalculatorTest.should_return_price_with_discount" />
+      <item itemvalue="Docker.user: Compose Deployment" />
+      <item itemvalue="JUnit.KafkaEmailListenerTest" />
+      <item itemvalue="JUnit.KafkaProducerTest" />
+      <item itemvalue="JUnit.KafkaProducerTest (1)" />
+      <item itemvalue="JUnit.KafkaProducerTest.should_send_message_to_kafka" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
-      <item itemvalue="Spring Boot.CurrenciesApplication" />
       <item itemvalue="Spring Boot.EmailSenderApplication" />
+      <item itemvalue="Spring Boot.CurrenciesApplication" />
       <item itemvalue="Spring Boot.FilmApplication" />
       <item itemvalue="Spring Boot.ScreeningApplication" />
       <item itemvalue="Spring Boot.TicketApplication" />
       <item itemvalue="Spring Boot.UserApplication" />
-      <item itemvalue="Spring Boot.DiscoveryApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.DiscoveryApplication" />
-        <item itemvalue="JUnit.TicketPriceCalculatorTest" />
-        <item itemvalue="JUnit.TicketPriceCalculatorTest.should_return_price_with_discount" />
-        <item itemvalue="JUnit.TicketControllerTest.should_book_ticket" />
+        <item itemvalue="JUnit.KafkaEmailListenerTest" />
+        <item itemvalue="JUnit.KafkaProducerTest.should_send_message_to_kafka" />
+        <item itemvalue="JUnit.KafkaProducerTest (1)" />
+        <item itemvalue="JUnit.KafkaProducerTest" />
+        <item itemvalue="Docker.user: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -336,119 +367,25 @@
       <workItem from="1704816519224" duration="1782000" />
       <workItem from="1704873799147" duration="5442000" />
       <workItem from="1704907239264" duration="1051000" />
-      <workItem from="1705085049475" duration="1935000" />
-    </task>
-    <task id="LOCAL-00025" summary="Created EmailSenderApplication">
-      <created>1702063903363</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1702063903363</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Configuration">
-      <created>1702063953790</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1702063953790</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Created ConfirmationEmailController with endpoint SEND_MAIL">
-      <created>1702421853953</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1702421853953</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Created docker-compose">
-      <created>1702421884990</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1702421884990</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Created EmailSenderClient">
-      <created>1702421903283</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1702421903283</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Added new configuration to gateway">
-      <created>1702421936513</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1702421936513</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Added new dependencies">
-      <created>1702421965501</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1702421965501</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Created SecurityConfig">
-      <created>1702421984722</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1702421984722</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Created SendEmailBody record">
-      <created>1702422004070</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1702422004070</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Code refactoring">
-      <created>1702422071729</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1702422071729</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Added messages.properties with messages">
-      <created>1702422091881</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1702422091881</updated>
-    </task>
-    <task id="LOCAL-00036" summary="MicroServices configuration">
-      <created>1702422150228</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1702422150228</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Configuration">
-      <created>1702837608636</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1702837608636</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Added new configuration">
-      <created>1702837653479</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1702837653479</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Created dto class">
-      <created>1702837748430</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1702837748430</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Created TicketPriceCalculator">
-      <created>1702837800378</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1702837800378</updated>
+      <workItem from="1705085049475" duration="2213000" />
+      <workItem from="1705255836681" duration="3771000" />
+      <workItem from="1705337839096" duration="599000" />
+      <workItem from="1705349950028" duration="48000" />
+      <workItem from="1705422439508" duration="2417000" />
+      <workItem from="1705488017505" duration="2933000" />
+      <workItem from="1706034549808" duration="960000" />
+      <workItem from="1706116173123" duration="7450000" />
+      <workItem from="1706735173917" duration="614000" />
+      <workItem from="1706873782068" duration="3945000" />
+      <workItem from="1706944316117" duration="13627000" />
+      <workItem from="1706965397640" duration="4116000" />
+      <workItem from="1707067903651" duration="4981000" />
+      <workItem from="1707130322978" duration="100000" />
+      <workItem from="1707131646346" duration="6028000" />
+      <workItem from="1707144360833" duration="1330000" />
+      <workItem from="1707148721191" duration="1629000" />
+      <workItem from="1707161768307" duration="7659000" />
+      <workItem from="1707203078221" duration="16790000" />
     </task>
     <task id="LOCAL-00041" summary="Created enum classes">
       <created>1702837843247</created>
@@ -681,7 +618,119 @@
       <option name="project" value="LOCAL" />
       <updated>1704907306590</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="Liquibase configuration and bug fixed">
+      <created>1705087248531</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1705087248532</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Liquibase configuration and bug fixed">
+      <created>1706124133798</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1706124133799</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Added new screenings to database">
+      <created>1706124231157</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1706124231157</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Added kafka configuration">
+      <created>1706945322794</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1706945322795</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Added kafka dependency to pom.xml">
+      <created>1706945373130</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1706945373130</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Code refactoring, splitting a single large sendEmailWithPDF method into 7 smaller ones">
+      <created>1707132603926</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1707132603926</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Added ApacheKafka dependency to pom.xml">
+      <created>1707221960810</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1707221960810</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Deleted feignClient classes">
+      <created>1707222176219</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222176219</updated>
+    </task>
+    <task id="LOCAL-00082" summary="renamed class name">
+      <created>1707222226673</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222226673</updated>
+    </task>
+    <task id="LOCAL-00083" summary="updated application.yml">
+      <created>1707222276310</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222276310</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Created KafkaProducer for ticket with sendMessage method">
+      <created>1707222339170</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222339170</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Created KafkaProducer for ConfirmationEmail with sendMessage method">
+      <created>1707222367277</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222367277</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Created KafkaListener for emailSender with listener methods">
+      <created>1707222408322</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222408322</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Created KafkaEmailListenerTest and added tests">
+      <created>1707222449023</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222449023</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Created KafkaProducerTest for ticket and added tests">
+      <created>1707222467524</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222467524</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Created KafkaProducerTest for Confirmation and added tests">
+      <created>1707222479530</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1707222479530</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -700,21 +749,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added zipkin dependency" />
-    <MESSAGE value="Created zipkin docker-compose" />
-    <MESSAGE value="Added new configuration" />
-    <MESSAGE value="Added create method" />
-    <MESSAGE value="Added factory pattern and change loops to streams" />
-    <MESSAGE value="Added properties to pom.xml for testing" />
-    <MESSAGE value="Created ScreeningServiceTest" />
-    <MESSAGE value="Created ScreeningValidate with tests" />
-    <MESSAGE value="Created ScreeningControllerTest with tests" />
-    <MESSAGE value="Created SeatServiceTest with tests" />
-    <MESSAGE value="Created FilmClientTest with tests" />
-    <MESSAGE value="Added microservice architecture.PNG" />
-    <MESSAGE value="Added liquibase dependencies to pom.xml" />
-    <MESSAGE value="Added liquibase classpath to configuration" />
-    <MESSAGE value="Added 01-create-film-table.sql" />
     <MESSAGE value="Added 02-add-films.sql" />
     <MESSAGE value="Added 03-create-table-screening.sql" />
     <MESSAGE value="Added 04-create-seats-table.sql" />
@@ -725,7 +759,22 @@
     <MESSAGE value="Code refactoring" />
     <MESSAGE value="Added youtube.PNG" />
     <MESSAGE value="Update screening list in 05-add-screenings.sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update screening list in 05-add-screenings.sql" />
+    <MESSAGE value="Liquibase configuration and bug fixed" />
+    <MESSAGE value="Added new screenings to database" />
+    <MESSAGE value="Added kafka configuration" />
+    <MESSAGE value="Added kafka dependency to pom.xml" />
+    <MESSAGE value="Code refactoring, splitting a single large sendEmailWithPDF method into 7 smaller ones" />
+    <MESSAGE value="Added ApacheKafka dependency to pom.xml" />
+    <MESSAGE value="Deleted feignClient classes" />
+    <MESSAGE value="renamed class name" />
+    <MESSAGE value="updated application.yml" />
+    <MESSAGE value="Created KafkaProducer for ticket with sendMessage method" />
+    <MESSAGE value="Created KafkaProducer for ConfirmationEmail with sendMessage method" />
+    <MESSAGE value="Created KafkaListener for emailSender with listener methods" />
+    <MESSAGE value="Created KafkaEmailListenerTest and added tests" />
+    <MESSAGE value="Created KafkaProducerTest for ticket and added tests" />
+    <MESSAGE value="Created KafkaProducerTest for Confirmation and added tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created KafkaProducerTest for Confirmation and added tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -738,6 +787,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/CinemaMicroService$FilmClientTest.ic" NAME="FilmClientTest Coverage Results" MODIFIED="1704543195037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.screening.screening.client.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/CinemaMicroService$KafkaEmailListenerTest.ic" NAME="KafkaEmailListenerTest Coverage Results" MODIFIED="1707220399760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.emailsender.email.*</FILTER>
     </SUITE>
   </component>
 </project>
