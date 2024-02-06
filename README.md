@@ -19,11 +19,19 @@ The application is integrated with the National Bank of Poland's API, allowing c
 
 User have the authority to add new films to the database and create new screenings, specifying the date, time, and film. 
 
+Apache Kafka:
+
+* The User and Ticket microservices are integrated with Apache Kafka, which sends messages to the EmailSender application.
+* Kafka is responsible for passing the data needed to send the confirmation email.
+* When a user completes the ticket reservation process, the reservation microservice publishes a message to Kafka with details of the ticket purchased.
+* The microservice responsible for generating and sending PDF tickets consumes this message, generates a ticket and then sends it to the user.
+* Using Kafka in this process ensures high availability and scalability of the system, enabling it to handle a large volume of reservations.
+
 Configuration:
 * Microservices operate on other ports and API Gateway serves as an intermediary layer between various microservices.
   This allows you to use a single port or endpoint to communicate with different services within the microservices architecture.
 * I utilized a Postgres database to establish relationships within the data.
-* All microservices are containerized in the DOCKER
+* All databases are containerized in DOCKER
 * Zipkin traces HTTP requests passing through various microservices in an application.
 * Eureka Server registers microservices and informs about their availability.
 * ConfigServer is responsible for centralized storage and distribution of configuration for microservices.
@@ -35,6 +43,7 @@ Configuration:
 <img src="https://ultimateqa.com/wp-content/uploads/2020/12/Java-logo-icon-1.png" alt="java" width="80" height="50"/> 
 </a> <a href="https://spring.io/" target="_blank" rel="noreferrer"> <img src="https://e4developer.com/wp-content/uploads/2018/01/spring-boot.png" alt="spring" width="90" height="50"/> 
 <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="50" height="50"/>
+  <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://blog.min.io/content/images/2021/09/1_kqpVTzo8b0e2oKdOjWQxZA.png" alt="java" width="99" height="50"/></a>
  <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="50" height="50"/> </a> 
  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://www.zdnet.com/a/img/resize/e7aff3398e12f0fa70fd66238d743054c4c8b95e/2018/04/19/092cbf81-acac-4f3a-91a1-5a26abc1721f/postgresql-logo.png?auto=webp&fit=crop&height=900&width=1200" alt="mysql" width="80" height="50"/> </a>
  <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://mapstruct.org/images/mapstruct.png" alt="docker" width="80" height="50"/></a>
