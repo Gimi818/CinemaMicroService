@@ -1,6 +1,7 @@
 package com.user.user;
 
 import com.user.confirmation.ConfirmUser;
+import com.user.user.dto.CreatedUserDto;
 import com.user.user.dto.UserRequestDto;
 import com.user.user.dto.UserResponseDto;
 import com.user.user.encoder.PasswordEncoderService;
@@ -12,17 +13,18 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.http.ResponseEntity;
 
 import java.util.Optional;
 import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
-
 class UserServiceTest {
     @Mock
     private UserRepository userRepository;
@@ -32,6 +34,8 @@ class UserServiceTest {
     private UserRequestDto userRequestDto;
     @Mock
     private UserResponseDto userResponseDto;
+    @Mock
+    private UserController controller;
     @Mock
     private ConfirmUser confirmUser;
     @Mock
@@ -44,9 +48,9 @@ class UserServiceTest {
 
     @BeforeEach
     void setUp() {
-        userRequestDto = new UserRequestDto("Adam","Buu","ab@o.com","qwerty","qwerty");
-        user = new User(1L,"Adam","Buu","ab@o.com","qwerty", AccountType.UNCONFIRMED,"janskdjnjnj");
-        userResponseDto = new UserResponseDto(1L,"A","B","ab@o.com",AccountType.UNCONFIRMED);
+        userRequestDto = new UserRequestDto("Adam", "Buu", "ab@o.com", "qwerty", "qwerty");
+        user = new User(1L, "Adam", "Buu", "ab@o.com", "qwerty", AccountType.UNCONFIRMED, "janskdjnjnj");
+        userResponseDto = new UserResponseDto(1L, "A", "B", "ab@o.com", AccountType.UNCONFIRMED);
     }
 
     @Test
@@ -93,6 +97,18 @@ class UserServiceTest {
         assertThrows(AlreadyExistException.class, () -> userService.existByMail(requestDto));
     }
 
+    @Test
+    void registration() {
+        UserRequestDto userRequestDto = new UserRequestDto("John", "Doe", "john@example.com", "password", "password");
+        CreatedUserDto createdUserDto = new CreatedUserDto(1L, "John", "Doe", "john@example.com");
 
+        when(userService.registration(userRequestDto)).thenReturn(createdUserDto);
+
+        ResponseEntity<CreatedUserDto> response = controller.registration(userRequestDto);
+
+
+        assertEquals(201, response.getStatusCodeValue());
+        assertEquals("John", response.getBody().firstName());
+    }
 
 }

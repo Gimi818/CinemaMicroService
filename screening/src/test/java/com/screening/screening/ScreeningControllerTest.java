@@ -18,17 +18,27 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.context.WebApplicationContext;
 import java.util.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import org.testcontainers.shaded.com.fasterxml.jackson.core.type.TypeReference;
+
+import static org.hamcrest.Matchers.hasSize;
+import static org.mockito.Mockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static com.screening.screening.ScreeningController.Routes.BOOKING_SEATS;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -54,11 +64,12 @@ class ScreeningControllerTest {
     @BeforeEach
     void setUp() throws JsonProcessingException {
         mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.disable(SerializationFeature.FAIL_ON_EMPTY_BEANS);
+     //   ObjectMapper objectMapper = new ObjectMapper();
+      //  org.testcontainers.shaded.com.fasterxml.jackson.databind.ObjectMapper
+     //   objectMapper.disable(SerializationFeature.FAIL_ON_EMPTY_BEANS);
         Film newFilm = new Film(1L, "AS", FilmCategory.ACTION, 120);
         screeningRequestDto = new ScreeningRequestDto(localDate, localTime);
-        screeningRequestDtoJson = objectMapper.writeValueAsString(screeningRequestDto);
+     //   screeningRequestDtoJson = objectMapper.writeValueAsString(screeningRequestDto);
         LocalDate data = LocalDate.of(2023, 10, 10);
         LocalTime time = LocalTime.of(21, 11);
         screeningResponseDto = new ScreeningResponseDto(1L, data, time, null);
@@ -77,8 +88,23 @@ class ScreeningControllerTest {
                 .andExpect(status().isCreated());
     }
 
+    @Test
+    @DisplayName("Should book seats")
+    void should_book_seats() throws Exception {
+        Long screeningId = 1L;
+        int rowNumber = 2;
+        int seatsNumber = 3;
+
+        doNothing().when(screeningService).bookingSets(screeningId, rowNumber, seatsNumber);
+        mockMvc.perform(put("/api/v1/screenings/booking/seats/{screeningId}/{rowNumber}/{seatsNumber}", screeningId, rowNumber, seatsNumber)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+        verify(screeningService, times(1)).bookingSets(screeningId, rowNumber, seatsNumber);
+    }
 
 
+
+}
 //    @Test
 //    @DisplayName("Should find all films by date")
 //    void should_find_films_by_date() throws Exception {
@@ -100,4 +126,4 @@ class ScreeningControllerTest {
 //
 //    }
 
-}
+

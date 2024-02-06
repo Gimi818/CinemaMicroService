@@ -24,9 +24,9 @@ class FilmClientTest {
         Film expectedFilm = new Film(1L, "title", 123);
         ResponseEntity<Film> responseEntity = new ResponseEntity<>(expectedFilm, HttpStatus.OK);
 
-        given(filmClient.findById(expectedFilm.getId())).willReturn(responseEntity);
+        given(filmClient.findById(expectedFilm.id())).willReturn(responseEntity);
 
-        ResponseEntity<Film> result = filmClient.findById(expectedFilm.getId());
+        ResponseEntity<Film> result = filmClient.findById(expectedFilm.id());
 
 
         assertEquals(HttpStatus.OK, result.getStatusCode());
@@ -37,10 +37,10 @@ class FilmClientTest {
     void testFindFilmById() {
         Film expectedFilm = new Film(1L, "title", 123);
 
-        given(filmClient.findFilmById(expectedFilm.getId())).willReturn(expectedFilm);
+        given(filmClient.findFilmById(expectedFilm.id())).willReturn(expectedFilm);
 
 
-        Film result = filmClient.findFilmById(expectedFilm.getId());
+        Film result = filmClient.findFilmById(expectedFilm.id());
 
 
         assertEquals(expectedFilm, result);

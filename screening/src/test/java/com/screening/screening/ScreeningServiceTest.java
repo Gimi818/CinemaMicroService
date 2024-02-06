@@ -7,15 +7,33 @@ import com.service.film.FilmCategory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import com.screening.screening.*;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Collections;
+import java.util.List;
+
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
+
 import static com.service.film.Film.*;
 import static com.service.film.FilmCategory.FANTASY;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -41,7 +59,7 @@ class ScreeningServiceTest {
     private Screening screening;
     @Mock
     private Screening secoundScreening;
-//    @Mock
+    //    @Mock
 //    private Film film;
     @Mock
     private ScreeningValidate screeningValidate;
@@ -52,7 +70,7 @@ class ScreeningServiceTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        // Film film = new Film(1L,"Harry Potter", FANTASY, 130);
+       // Film film = new Film(1L,"Harry Potter", FANTASY, 130);
         MockitoAnnotations.initMocks(this);
         LocalDate date = LocalDate.of(2023, 12, 31);
         LocalTime time = LocalTime.of(12, 10);
@@ -62,6 +80,23 @@ class ScreeningServiceTest {
 
     }
 
+    @Test
+    void findScreeningsByDate() {
+        LocalDate date = LocalDate.now();
+        Screening screening = new Screening(date, LocalTime.now(), 1L, null);
+        List<Screening> screenings = List.of(screening);
+        ScreeningResponseDto screeningResponseDto = new ScreeningResponseDto(1L, date, LocalTime.now(), null);
+
+        when(screeningRepository.findScreeningsByDate(date)).thenReturn(screenings);
+         // when(screeningMapper.createdEntityToDto(screening)).thenReturn(screeningResponseDto);
+
+        List<ScreeningResponseDto> result = service.getScreeningsByDate(date);
+
+        assertNotNull(result);
+        assertFalse(result.isEmpty());
+        assertEquals(1, result.size());
+        verify(screeningRepository).findScreeningsByDate(date);
+    }
 //        @Test
 //    @DisplayName("Should save screening")
 //    void should_save_screening() {
