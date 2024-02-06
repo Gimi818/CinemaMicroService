@@ -10,15 +10,16 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
+
 @Service
 @RequiredArgsConstructor
 @Log4j2
 public class ConfirmUser {
     private final UserRepository repository;
+    private final KafkaProducer kafkaProducer;
 
-    private final EmailSenderClient emailSenderClient;
     @Value("${confirmation.link}")
-    public String confirmationLink ;
+    public String confirmationLink;
 
     public String generateConfirmationLink(User user) {
         return confirmationLink + user.getConfirmationToken();
@@ -29,9 +30,9 @@ public class ConfirmUser {
     }
 
     public void sendConfirmationEmail(User user) {
-        SendEmailBody email = new SendEmailBody(user.getEmail(), generateConfirmationLink(user));
-        emailSenderClient.sendEmail(email);
+        kafkaProducer.sendMessage("confirmationEmailTopic", new ConfirmationEmail(user.getEmail(), generateConfirmationLink(user)));
     }
+
     @Transactional
     public void confirmUserAccount(String token) {
 
