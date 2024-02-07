@@ -16,16 +16,7 @@ management:
     sampling:
       probability: 1.0
 
-mail:
-  host: smtp.gmail.com
-  port: 587
-  username: cinemaemailtest@gmail.com
-  password: eumw bkil vcnv aiaf
-  properties:
-    mail:
-      smtp:
-        auth: true
-      smtp.starttls.enable: true
+
 kafka:
   consumer:
     bootstrap-servers: localhost:9092
