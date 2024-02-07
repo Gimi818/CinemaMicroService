@@ -34,7 +34,7 @@ class KafkaEmailListenerTest {
     private ObjectMapper objectMapper;
 
     @InjectMocks
-    private KafkaEmailListener kafkaEmailListener;
+    private KafkaConsumer kafkaEmailListener;
 
     private final String emailWithTicketJson = "{\"email\":\"example@example.com\",\"ticketDto\":{\"name\":\"SampleTicket\"}}";
     private final String confirmationEmailJson = "{\"to\":\"user@example.com\",\"confirmationLink\":\"http://example.com/confirm\"}";

@@ -11,13 +11,13 @@ import jakarta.mail.MessagingException;
 
 @Service
 @AllArgsConstructor
-public class KafkaEmailListener {
+public class KafkaConsumer {
 
     private final EmailWithTicketPdf emailWithTicketPdf;
     private final ConfirmationEmailSender sendConfirmationEmail;
     private final ObjectMapper objectMapper;
 
-    @KafkaListener(topics = "emailWithTicketTopic", groupId = "emailSender-group")
+    @KafkaListener(topics = "emailWithTicketTopic", groupId = "emailSender-group-ticket")
     public void listenForEmailWithTicket(String emailWithTicketJson) {
         try {
             EmailWithTicket emailWithTicket = objectMapper.readValue(emailWithTicketJson, EmailWithTicket.class);
@@ -27,7 +27,7 @@ public class KafkaEmailListener {
         }
     }
 
-    @KafkaListener(topics = "confirmationEmailTopic", groupId = "emailSender-group")
+    @KafkaListener(topics = "confirmationEmailTopic", groupId = "emailSender-group-confirmation")
     public void listenConfirmationEmail(String confirmationEmailJson) {
         try {
             ConfirmationEmail confirmationEmail = objectMapper.readValue(confirmationEmailJson, ConfirmationEmail.class);
