@@ -2,6 +2,7 @@
 version: '3'
 
 services:
+
   zookeeper:
     container_name: zookeeper
     image: confluentinc/cp-zookeeper:latest
@@ -21,25 +22,36 @@ services:
     ports:
       - "9092:9092"
     environment:
-      KAFKA_ADVERTISED_HOST_NAME: localhost:9092
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,PLAINTEXT_INTERNAL://0.0.0.0:9093
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:9093
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - kafka_network
-  kafkahq:
-    container_name: kafkaHQ
-    image: tchiotludo/kafkahq
+  akhq:
+    user: root
+    container_name: akhq
+    image: tchiotludo/akhq
     ports:
       - "8080:8080"
-    volumes:
-      - "./appconfig.yml:/app/application.yml"
+    environment:
+      AKHQ_CONFIGURATION: |
+        akhq:
+          connections:
+            my-cluster:
+              properties:
+                bootstrap.servers: "kafka:9093"
     depends_on:
       - kafka
-
+    volumes:
+      - "./akhq-config.yml:/app/application.yml"
+    networks:
+      - kafka_network
 
   zipkin:
     container_name: zipkin
@@ -49,6 +61,65 @@ services:
     networks:
       - zipkin_network
 
+  screeningDB:
+    image: postgres
+    container_name: screening
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: screenings
+    ports:
+      - "5100:5432"
+    volumes:
+      - screening-data:/var/lib/postgresql/data
+
+  ticketsDB:
+    image: postgres
+    container_name: tickets
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: tickets
+    ports:
+      - "5555:5432"
+    volumes:
+      - tickets-data:/var/lib/postgresql/data
+
+  filmDB:
+    image: postgres
+    container_name: film
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: films
+    ports:
+      - "5001:5432"
+    volumes:
+      - films-data:/var/lib/postgresql/data
+
+  userDB:
+    image: postgres
+    container_name: postgres-containerusers
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: users
+    ports:
+      - "5111:5432"
+    volumes:
+      - users-data:/var/lib/postgresql/data
+
+  currenciesDB:
+    image: postgres
+    container_name: currencies
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: currencies
+    ports:
+      - "5050:5432"
+    volumes:
+      - currencies-data:/var/lib/postgresql/data
 networks:
   zipkin_network:
     driver: bridge
@@ -58,3 +129,10 @@ networks:
 volumes:
   postgres:
   pgadmin:
+  postgres-data:
+  tickets-data:
+  films-data:
+  screening-data:
+  users-data:
+  currencies-data:
+
