@@ -59,19 +59,19 @@ Configuration:
   <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/microservice-architecture/architectureMS.PNG" width="1000" heigt="700"/>
   
   ## Demonstration of the use of a microservice on YouTube:
-[![Cinema](https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/youtube.PNG)](https://www.youtube.com/watch?v=LuNnaEmEUm8&feature=youtu.be)
-Link : https://www.youtube.com/watch?v=LuNnaEmEUm8&feature=youtu.be
+[![Cinema](https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/ytpic.PNG)](https://youtu.be/wAsoqzuN98A)
+Link : https://youtu.be/wAsoqzuN98A
 
    ## To run the application, follow these steps :
 - Install IntelliJ IDEA and Docker Desktop on your computer.
 - Run Docker Desktop.
 - Clone the repository in IntelliJ IDEA using the link https://github.com/Gimi818/CinemaMicroService
-- Run docker-compose up in services: ticket, screening, user, film, currencies, zipkin in the terminal. 
-- Run the ConfigServer, DiscoveryServer, Gateway  in IntelliJ IDEA.
-- Run the other services: ticket, screening, user, film, currencies  in IntelliJ IDEA.
+- Run docker-compose up in the terminal. 
+- Run the ConfigServer, DiscoveryServer, and Gateway  in IntelliJ IDEA.
+- Run the other services: ticket, screening, user, film, and currencies  in IntelliJ IDEA.
 - Try the applications in Postaman, the steps on how to do it are below.
  
- ## How to use application in Postman:
+ ## How to use the application in Postman:
  
     Step 1 :
     POST localhost:8222/api/v1/users/registration
