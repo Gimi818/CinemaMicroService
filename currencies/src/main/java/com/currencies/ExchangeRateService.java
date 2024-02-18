@@ -13,7 +13,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import static com.currencies.ExchangeRate.create;
 import static com.currencies.ExchangeRateService.ErrorMessages.*;
 
 import java.util.List;
@@ -28,6 +27,7 @@ class ExchangeRateService {
     private final ExchangeRateRepository repository;
     private final CurrenciesMapper mapper;
 
+
     @Value("${nbp.api.url}")
     private String url;
 
@@ -41,7 +41,6 @@ class ExchangeRateService {
     public ExchangeRate findRateByCode(String code) {
         return repository.findByCode(code).orElseThrow(() -> new NotFoundException(NOT_FOUND_CODE, code));
     }
-
 
 
     public void saveCurrencyRatesFromJson(String jsonResponse) {
@@ -61,7 +60,8 @@ class ExchangeRateService {
                             repository.save(existing);
                             log.info("Update {} rate ", existing.getCurrency());
                         } else {
-                            ExchangeRate exchangeRate = repository.save(create(rate.currency(), rate.code(), rate.mid()));
+                            ExchangeRate exchangeRate = new ExchangeRate(rate.currency(), rate.code(), rate.mid());
+                            repository.save(exchangeRate);
                             log.info("Added {} rate ", exchangeRate.getCurrency());
                         }
                     });
@@ -82,8 +82,9 @@ class ExchangeRateService {
     public void addPLNRate() {
         Optional<ExchangeRate> plnExchangeRate = repository.findByCode("PLN");
         if (plnExchangeRate.isEmpty()) {
-            ExchangeRate exchangeRate = create("Polski Złoty","PLN",1.0);
+            ExchangeRate exchangeRate = new ExchangeRate("Polski Złoty", "PLN", 1.0);
             repository.save(exchangeRate);
+
             log.info("Added PLN rate   ");
         }
     }
