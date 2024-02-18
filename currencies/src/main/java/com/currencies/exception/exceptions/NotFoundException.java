@@ -1,4 +1,4 @@
-package com.currencies.exception;
+package com.currencies.exception.exceptions;
 
 public class NotFoundException extends RuntimeException {
 
