@@ -6,12 +6,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 @AllArgsConstructor
-public class ExchangeRateScheduler {
-    private final ExchangeRateService service;
+class ExchangeRateScheduler {
+    private final ExchangeRateProcessor exchangeRateProcessor;
+    private static final long ONE_DAY_IN_MILLISECONDS = 86400000;
 
-    @Scheduled(fixedRate = 86400000)
+    @Scheduled(fixedRate = ONE_DAY_IN_MILLISECONDS)
     public void updateExchangeRate() {
-        service.requestToNBP();
+        exchangeRateProcessor.updateCurrencyRates();
     }
 }
 

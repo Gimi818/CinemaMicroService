@@ -1,5 +1,6 @@
 package com.currencies;
 
+import com.currencies.dto.ExchangeRateDto;
 import com.currencies.dto.ExchangeRateResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -24,7 +25,7 @@ class ExchangeRateController {
     }
 
     @GetMapping(FIND_CODE)
-    public ExchangeRate findCode(@PathVariable String code) {
+    public ExchangeRateDto findCode(@PathVariable String code) {
         return service.findRateByCode(code);
     }
 
