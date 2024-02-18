@@ -67,7 +67,6 @@ class ExchangeRateService {
 
     static final class ErrorMessages {
         static final String NOT_FOUND_CODE = "Not found %s code";
-        static final String JSON_PARSE_EXCEPTION = "Error parsing JSON response";
 
     }
 }
