@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.util.List;
 
-import static com.currencies.ExchangeRateService.ErrorMessages.JSON_PARSE_EXCEPTION;
+import static com.currencies.ExchangeRateProcessor.ErrorMessages.JSON_PARSE_EXCEPTION;
 
 @Service
 @AllArgsConstructor
@@ -34,9 +34,11 @@ public class ExchangeRateProcessor {
             return objectMapper.readValue(jsonResponse, new TypeReference<List<CurrencyDataDto>>() {
             });
         } catch (IOException e) {
-            log.error("Error parsing JSON response", e);
             throw new JsonParseException(JSON_PARSE_EXCEPTION, e);
         }
     }
+    static final class ErrorMessages {
+        static final String JSON_PARSE_EXCEPTION = "Error parsing JSON response";
 
+    }
 }
