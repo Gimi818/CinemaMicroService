@@ -1,5 +1,7 @@
 package com.currencies.exception;
 
+import com.currencies.exception.exceptions.JsonParseException;
+import com.currencies.exception.exceptions.NotFoundException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.http.HttpStatus;
@@ -18,6 +20,17 @@ public class ControllerErrorHandler {
         final String message = exception.getMessage();
         log.error(message);
         return new
-                ErrorResponse(message, HttpStatus.NOT_FOUND);
+                ErrorResponse(message);
+    }
+
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(JsonParseException.class)
+    @ResponseBody
+    public ErrorResponse jsonPareException(JsonParseException exception) {
+        final String message = exception.getMessage();
+        log.error(message);
+        return new
+                ErrorResponse(message);
     }
 }
