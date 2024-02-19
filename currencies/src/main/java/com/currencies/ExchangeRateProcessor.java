@@ -2,7 +2,7 @@ package com.currencies;
 
 import com.currencies.dto.CurrencyDataDto;
 import com.currencies.exception.exceptions.JsonParseException;
-import com.currencies.nbpApiClinet.ExchangeRateApiClient;
+import com.currencies.nbpApiClient.ExchangeRateApiClient;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;

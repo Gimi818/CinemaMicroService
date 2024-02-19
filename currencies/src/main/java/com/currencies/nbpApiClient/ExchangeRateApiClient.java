@@ -1,4 +1,4 @@
-package com.currencies.nbpApiClinet;
+package com.currencies.nbpApiClient;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
