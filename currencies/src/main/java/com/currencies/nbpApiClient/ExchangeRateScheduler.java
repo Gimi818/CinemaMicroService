@@ -1,5 +1,6 @@
-package com.currencies;
+package com.currencies.nbpApiClient;
 
+import com.currencies.ExchangeRateProcessor;
 import lombok.AllArgsConstructor;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
