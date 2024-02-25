@@ -95,7 +95,7 @@ Link : https://youtu.be/wAsoqzuN98A
     Step 3 :
     GET localhost:8222/api/v1/screenings?date=2024-02-26
     Select the desired cinema date, input it into the URL, and discover a film you'd like to watch.
-    (screenings are available from 2024-02-07 to 2024-02-27)
+    (screenings are available from 2024-02-26 to 2024-03-27)
     
    <img src="https://github.com/Gimi818/CinemaMicroService/blob/master/steps/steps/2.PNG" width="600" heigt="800"/>
 
