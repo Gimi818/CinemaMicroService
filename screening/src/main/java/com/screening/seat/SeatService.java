@@ -4,6 +4,7 @@ import com.screening.common.exception.exceptions.AlreadyTakenException;
 import com.screening.common.exception.exceptions.NotFoundException;
 import com.screening.screening.Screening;
 import com.screening.screening.ScreeningFacade;
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ class SeatService implements SeatFacade {
     private final ScreeningFacade screeningFacade;
     private final SeatRepository seatRepository;
 
-
+    @Transactional
     public void checkSeatsAvailability(Long screeningId, int rowsNumber, int seatInRow) {
         Screening screening = screeningFacade.findById(screeningId);
 

@@ -40,7 +40,7 @@ class ExchangeRateServiceTest {
 
     @Test
     @DisplayName("Should find currency by code")
-    void should_find_user_by_id() {
+    void should_find_currency_by_code() {
         String code = "USD";
         given(repository.findByCode(code)).willReturn(Optional.of(exchangeRate));
         given(currenciesMapper.entityToExchangeRateDto(exchangeRate))
