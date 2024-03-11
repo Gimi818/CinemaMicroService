@@ -103,27 +103,5 @@ class ScreeningControllerTest {
     }
 
 
-
 }
-//    @Test
-//    @DisplayName("Should find all films by date")
-//    void should_find_films_by_date() throws Exception {
-//        // Given
-//        List<ScreeningResponseDto> screeningResponseList = List.of(screeningResponseDto, secondScreeningResponseDto);
-//        given(screeningService.getScreeningsByDate(LocalDate.of(2023,10,10)))
-//                .willReturn(screeningResponseList);
-//
-//        // When
-//        MvcResult mvcResult = mockMvc.perform(get("/screenings?date=2023-10-10"))
-//                .andExpect(status().isOk())
-//                .andReturn();
-//
-//        String screeningDtoJson = mvcResult.getResponse().getContentAsString();
-//        List<Screening> screeningsResult = new ObjectMapper()
-//                .readValue(screeningDtoJson, new TypeReference<List<Screening>>() {
-//                });
-//        assertThat(screeningsResult).hasSize(2);
-//
-//    }
-
 

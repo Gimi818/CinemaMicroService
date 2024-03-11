@@ -59,18 +59,14 @@ class ScreeningServiceTest {
     private Screening screening;
     @Mock
     private Screening secoundScreening;
-    //    @Mock
-//    private Film film;
     @Mock
     private ScreeningValidate screeningValidate;
-    // @Mock
-    // private FilmFacade filmFacade;
+
 
 
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-       // Film film = new Film(1L,"Harry Potter", FANTASY, 130);
         MockitoAnnotations.initMocks(this);
         LocalDate date = LocalDate.of(2023, 12, 31);
         LocalTime time = LocalTime.of(12, 10);
