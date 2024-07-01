@@ -28,14 +28,14 @@ Apache Kafka:
 * Using Kafka in this process ensures high availability and scalability of the system, enabling it to handle a large volume of reservations.
 
 Configuration:
-* Microservices operate on other ports and API Gateway serves as an intermediary layer between various microservices.
-  This allows you to use a single port or endpoint to communicate with different services within the microservices architecture.
-* I utilized a Postgres database to establish relationships within the data.
-* All databases are containerized in DOCKER
-* Zipkin traces HTTP requests passing through various microservices in an application.
-* Eureka Server registers microservices and informs about their availability.
-* ConfigServer is responsible for centralized storage and distribution of configuration for microservices.
-* Microservices communicate with each other over HTTP by exposing endpoints and using Feign Client.
+
+  * API Gateway: Acts as an intermediary layer between various microservices, allowing communication with different services through a single port or endpoint.
+  * Database: PostgreSQL is used to manage data relationships, containerized using Docker.
+  * Monitoring and Tracing: Zipkin traces HTTP requests passing through various microservices in the application.
+  * Service Registration: Eureka Server registers microservices and informs about their availability.
+  * Configuration Management: ConfigServer is responsible for centralized storage and distribution of configuration for microservices.
+  * Inter-Service Communication: Microservices communicate with each other over HTTP by exposing endpoints and using Feign Client.
+
 
  ## Application is developed using following technologies:
  Core:
